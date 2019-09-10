@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>http://www.matteosilvestro.com/</loc>
+  <lastmod>2019-09-10T15:55:57+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.matteosilvestro.com/uni</loc>
+  <lastmod>2019-09-10T15:55:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.matteosilvestro.com/cv</loc>
+  <lastmod>2019-09-10T15:55:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.matteosilvestro.com/projects</loc>
+  <lastmod>2019-09-10T15:55:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.matteosilvestro.com/files/uni/tri/MosseGarePokemonLive.pdf</loc>
+  <lastmod>2019-09-10T15:44:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.matteosilvestro.com/files/uni/sds/cftp.pdf</loc>
+  <lastmod>2019-09-10T15:42:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.matteosilvestro.com/files/uni/sds/thesis.pdf</loc>
+  <lastmod>2019-09-10T15:44:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.matteosilvestro.com/files/uni/sds/slides.pdf</loc>
+  <lastmod>2019-09-10T15:43:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.matteosilvestro.com/files/cv/cv_en.pdf</loc>
+  <lastmod>2017-10-26T14:59:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.matteosilvestro.com/files/cv/nd803.pdf</loc>
+  <lastmod>2017-10-26T14:59:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.matteosilvestro.com/files/covers/reconstructing_more_science/Reconstructing%20more%20science.pdf</loc>
+  <lastmod>2017-10-26T15:01:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.matteosilvestro.com/files/covers/trilobyte/Trilobyte.pdf</loc>
+  <lastmod>2017-10-26T15:03:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

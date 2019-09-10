@@ -1,0 +1,36 @@
+#wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sv_qstn {
+    margin-bottom: 10px;
+}
+
+#slider, #arousal-slider {
+    width: 50%;
+}
+
+#valence-slider {
+    width: 50%;
+}
+
+#valence-slider .noUi-base {
+    background-color: #f44336;
+}
+
+#valence-slider .noUi-connect {
+    background-color: #4caf50;
+}
+
+#arousal-slider, #valence-slider, #slider {
+    margin-bottom: 40px;
+}
+
+#arousal-slider .noUi-connect {
+    background-color: #fb7750;
+}
+
+#slider .noUi-connect {
+    background-color: #337ab7;
+}

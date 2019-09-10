@@ -1,0 +1,182 @@
+/*--
+Espresso CSS Style - Valid CSS3
+by Matteo Silvestro
+CC BY 4.0
+http://creativecommons.org/licenses/by/4.0/
+last update: 09/09/2019
+--*/
+
+/*-- general --*/
+
+html {
+	margin-left: calc(100vw - 100%); /* avoid scrollbar jumps */
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #1e1e1e;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+h1, h2, h3 {
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-top: 20px;
+}
+
+h3 {
+	font-size: 1.2em;
+	margin-top: 12px;
+}
+
+ul, ol {
+	margin: 0;
+	padding-left: 20px;
+}
+
+ul {
+	list-style: square;
+}
+
+p {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+blockquote {
+	margin: 0;
+	padding: 0;
+	padding-left: 0.5em;
+	border-left: 5px solid #569cd6; /* was: #4c56af */
+}
+
+abbr {
+	cursor: help;
+}
+
+strong {
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	border-bottom: 1px dotted #569cd6;
+}
+
+a, strong, abbr:hover { /* highlighting and link color */
+	color: #569cd6;
+}
+
+a:hover, a abbr:hover { /* get into account also the menu links */
+	color: #8cdcfe; /* was: #2e7d32 */
+	border-bottom: 1px dotted #8cdcfe;
+}
+
+hr, .hidden {
+	display: none;
+}
+
+#layout {
+	max-width: 600px;
+	margin: 0 auto 0 auto;
+	padding: 20px;
+	background: #1e1e1e;
+	color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+
+	/* for mobile phones */
+	body {
+		font-size: 14px;
+	}
+
+    h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.2em;
+	}
+}
+
+/* -- menu -- */
+
+#menu {
+	text-transform: lowercase;
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
+#menu ul {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu ul li {
+	display: inline;
+}
+
+#menu ul li a abbr {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/* -- footer -- */
+
+#footer {
+	color: #607d8b;
+	margin-top: 20px;
+}
+
+#footer abbr {
+	border: 0; /* bacause in Firefox 15 it has the same border-bottom as a */
+	text-decoration: none;
+}
+
+/* -- main.md -- */
+
+ul li a#fb:hover {
+	color: #3b5998;
+	border-bottom: 1px dotted #3b5998;
+}
+
+ul li a#tw:hover {
+	color: #00acee;
+	border-bottom: 1px dotted #00acee;
+}
+
+ul li a#yt:hover {
+	color: #af100a;
+	border-bottom: 1px dotted #af100a;
+}
+
+ul li a#st:hover {
+	color: #808080;
+	border-bottom: 1px dotted #808080;
+}
+
+ul li a#lf:hover {
+	color: #d51007;
+	border-bottom: 1px dotted #d51007;
+}

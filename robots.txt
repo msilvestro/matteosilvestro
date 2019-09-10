@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /pages/
+Disallow: /lib/
+Disallow: /dev/
+Sitemap: http://www.matteosilvestro.com/sitemap_index.xml
