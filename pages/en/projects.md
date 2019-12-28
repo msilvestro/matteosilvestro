@@ -20,6 +20,10 @@ Check my [YouTube channel][yt] for all my music covers!
     * [🎵 Cover in WAV format][trilobyte_wav]
     * [🎶 MIDI file][trilobyte_midi]
     * [📄 Lilypond source][trilobyte_ly]
+5. [Tu Scendi Dalle Stelle][tsds] on *Game Boy Color*.
+    * [🎼 Music score][tsds_score]
+    * [🎵 Cover in MP3 format][tsds_mp3]
+    * [🎵 Cover in WAV format][tsds_wav]
 
 [yt]: https://www.youtube.com/c/MatteoSilvestro
 
@@ -37,3 +41,7 @@ Check my [YouTube channel][yt] for all my music covers!
 [trilobyte_wav]: /files/covers/trilobyte/Trilobyte.wav
 [trilobyte_midi]: /files/covers/trilobyte/Trilobyte.mid
 [trilobyte_ly]: /files/covers/trilobyte/Trilobyte.ly
+[tsds]: https://youtu.be/tyYpu07Jms0
+[tsds_score]: /files/covers/tu_scendi_dalle_stelle/tu_scendi_dalle_stelle.mscz
+[tsds_mp3]: /files/covers/tu_scendi_dalle_stelle/tsdsgb.mp3
+[tsds_wav]: /files/covers/tu_scendi_dalle_stelle/tsdsgb.wav

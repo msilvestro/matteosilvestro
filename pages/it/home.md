@@ -1,7 +1,6 @@
 # La pagina di **Matteo Silvestro**
 
-<!-- Matteo Silvestro -->
-La vita è un'incognita, sta a noi impostarne l'equazione risolutiva. Anche se i risultati possono essere imprevedibili, l'importante è non arrendersi mai e credere in se stessi.
+Per le ottime idee non serve tempo. Servono prima un sacco di pessime idee.
 
 ## Opere da non perdere
 
@@ -11,11 +10,11 @@ La vita è un'incognita, sta a noi impostarne l'equazione risolutiva. Anche se i
 
 ## Le mie identità
 
-* [Facebook](fb){#fb}
-* [Twitter](tw){#tw}
-* [YouTube](yt){#yt}
-* [Steam](st){#st}
-* [Last.fm](lf){#lf}
+* [Facebook](https://www.facebook.com/msilvestro93){#fb}
+* [Twitter](https://twitter.com/msilvestro){#tw}
+* [YouTube](https://www.youtube.com/c/MatteoSilvestro){#yt}
+* [Steam](http://steamcommunity.com/id/msilvestro/){#st}
+* [Last.fm](http://www.lastfm.it/user/msilvestro){#lf}
 
 ## Contattami
 
@@ -24,9 +23,3 @@ La vita è un'incognita, sta a noi impostarne l'equazione risolutiva. Anche se i
 [the_good_place]: https://www.nbc.com/the-good-place
 [journey]: https://thatgamecompany.com/journey/
 [quiet]: https://www.quietrev.com/quiet-the-book/
-
-[fb]: https://www.facebook.com/msilvestro93
-[tw]: https://twitter.com/msilvestro
-[yt]: https://www.youtube.com/c/MatteoSilvestro
-[st]: http://steamcommunity.com/id/msilvestro/
-[lf]: http://www.lastfm.it/user/msilvestro
