@@ -2,8 +2,11 @@
 define("DEFAULT_LANGUAGE", "en");
 $SUPPORTED_LANGUAGES = ["it", "en"];
 define("DEFAULT_PAGE", "home");
-define("LAST_UPDATE", "10/09/2019");
-define("VERSION", "zeta");
+define("LAST_UPDATE", "04/03/2020");
+define("VERSION", "eta");
+
+$last_update_exploded = explode('/', LAST_UPDATE);
+$last_update_year = end($last_update_exploded);
 
 include 'lib/Parsedown.php';
 include 'lib/ParsedownExtra.php';
@@ -161,9 +164,9 @@ last update: <?php echo LAST_UPDATE; ?>
 <div id="footer">
 
 <?php if ($lang == "it"): ?>
-Matteo Silvestro <abbr title="Ultimo aggiornamento: <?php echo LAST_UPDATE; ?>">2019</abbr> - Stile <abbr title="Lo stile Espresso è basato su puro testo, con caratteri ben visibili e qualche formattazione. Quindi, è facilmente interpretabile da tutti i browser, via cellulare o PC, e facilmente leggibile da tutte le persone. La pagina è perfetta anche senza CSS.">Espresso*</abbr> - Versione <abbr title="<?php echo VERSION; ?>">&<?php echo VERSION; ?>;</abbr> - <a href="/<?php echo $foreign_page_url; ?>" target="_self" lang="en">english version</a>
+Matteo Silvestro <abbr title="Ultimo aggiornamento: <?= LAST_UPDATE ?>"><?= $last_update_year ?></abbr> - Versione <abbr title="<?= VERSION ?>">&<?= VERSION ?>;</abbr> - Stile <a href="/espresso.css"><abbr title="Lo stile Espresso è basato su puro testo, con caratteri ben visibili e qualche formattazione. Quindi, è facilmente interpretabile da tutti i browser, via cellulare o PC, e facilmente leggibile da tutte le persone. La pagina è perfetta anche senza CSS.">Espresso</abbr></a> - <a href="/pages/it/<?= $page_name ?>.md"><abbr title="Visualizza il codice sorgente della pagina">md</abbr></a> - <a href="/<?= $foreign_page_url; ?>" target="_self" lang="en">english version</a>
 <?php else: ?>
-Matteo Silvestro <abbr title="Last update: <?php echo LAST_UPDATE; ?>">2019</abbr> - <abbr title="Espresso style is based off pure text, with well-visible fonts and a few formatting. So, it is easily interpretable by all browsers, mobile phones or computer, and easily readable by everybody. The page is perfect even without CSS.">Espresso*</abbr> style - Version <abbr title="<?php echo VERSION; ?>">&<?php echo VERSION; ?>;</abbr> - <a href="/it/<?php echo $foreign_page_url; ?>" target="_self" lang="it">versione italiana</a>
+Matteo Silvestro <abbr title="Last update: <?= LAST_UPDATE ?>"><?= $last_update_year ?></abbr> - Version <abbr title="<?= VERSION ?>">&<?= VERSION ?>;</abbr> - <a href="/espresso.css"><abbr title="Espresso style is based off pure text, with well-visible fonts and a few formatting. So, it is easily interpretable by all browsers, mobile phones or computer, and easily readable by everybody. The page is perfect even without CSS.">Espresso</abbr></a> style - <a href="/pages/en/<?= $page_name ?>.md"><abbr title="Show the source code of the page">md</abbr></a> - <a href="/it/<?php echo $foreign_page_url; ?>" target="_self" lang="it">versione italiana</a>
 <?php endif; ?>
 
 </div>

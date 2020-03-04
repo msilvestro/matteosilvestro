@@ -15,6 +15,8 @@ Good ideas don't take time. They take a lot of bad ideas first.
 * [YouTube](https://www.youtube.com/c/MatteoSilvestro){#yt}
 * [Steam](http://steamcommunity.com/id/msilvestro/){#st}
 * [Last.fm](http://www.lastfm.it/user/msilvestro){#lf}
+* [GitHub](https://github.com/msilvestro){#gh}
+* [MuseScore](https://musescore.com/user/4373921){#ms}
 
 ## Contact me
 

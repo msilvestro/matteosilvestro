@@ -4,7 +4,7 @@ My personal projects.
 
 ## Music covers
 
-Check my [YouTube channel][yt] for all my music covers!
+Check my [YouTube channel][yt] and my [Musescore profile][ms] for all music covers!
 
 1. [Italian national anthem][inno_italia] on *Stylophone*.
 2. [Reconstructing More Science][reconstructing] from *Portal 2* on piano.
@@ -25,7 +25,12 @@ Check my [YouTube channel][yt] for all my music covers!
     * [🎵 Cover in MP3 format][tsds_mp3]
     * [🎵 Cover in WAV format][tsds_wav]
 
+## Coding projects
+
+1. [Qlik Butler][qlik_butler], a collection of graphical tools to help managing Qlik Sense and NPrinting clusters. Made while working in Intesa Sanpaolo for this purpose.
+
 [yt]: https://www.youtube.com/c/MatteoSilvestro
+[ms]: https://musescore.com/user/4373921
 
 [inno_italia]: https://www.youtube.com/watch?v=xjAYyEqnTaw
 [reconstructing]: https://www.youtube.com/watch?v=vd6Nx3trzUs
@@ -45,3 +50,5 @@ Check my [YouTube channel][yt] for all my music covers!
 [tsds_score]: /files/covers/tu_scendi_dalle_stelle/tu_scendi_dalle_stelle.mscz
 [tsds_mp3]: /files/covers/tu_scendi_dalle_stelle/tsdsgb.mp3
 [tsds_wav]: /files/covers/tu_scendi_dalle_stelle/tsdsgb.wav
+
+[qlik_butler]: https://github.com/msilvestro/QlikButler

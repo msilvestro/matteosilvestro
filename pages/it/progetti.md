@@ -4,7 +4,7 @@ I miei progetti personali.
 
 ## Cover musicali
 
-Vai al mio [canale YouTube][yt] per tutte le mie cover!
+Vai sul mio [canale YouTube][yt] e sul mio [profilo Musescore][ms] per tutte le cover!
 
 1. [Inno d'Italia][inno_italia] su *Stylophone*.
 2. [Reconstructing More Science][reconstructing] da *Portal 2* su pianoforte.
@@ -25,7 +25,12 @@ Vai al mio [canale YouTube][yt] per tutte le mie cover!
     * [🎵 Cover in formato MP3][tsds_mp3]
     * [🎵 Cover in formato WAV][tsds_wav]
 
+## Progetti in codice
+
+1. [Qlik Butler][qlik_butler], una suite grafica di strumenti per facilitare la gestione di installazioni Qlik Sense e NPrinting. Creata durante il periodo lavorativo in Intesa Sanpaolo a questo scopo.
+
 [yt]: https://www.youtube.com/c/MatteoSilvestro
+[ms]: https://musescore.com/user/4373921
 
 [inno_italia]: https://www.youtube.com/watch?v=xjAYyEqnTaw
 [reconstructing]: https://www.youtube.com/watch?v=vd6Nx3trzUs
@@ -45,3 +50,5 @@ Vai al mio [canale YouTube][yt] per tutte le mie cover!
 [tsds_score]: /files/covers/tu_scendi_dalle_stelle/tu_scendi_dalle_stelle.mscz
 [tsds_mp3]: /files/covers/tu_scendi_dalle_stelle/tsdsgb.mp3
 [tsds_wav]: /files/covers/tu_scendi_dalle_stelle/tsdsgb.wav
+
+[qlik_butler]: https://github.com/msilvestro/QlikButler
