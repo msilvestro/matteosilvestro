@@ -18,14 +18,14 @@ body {
 	background: #1e1e1e;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
-	color: #fff;
+	color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
-	font-weight: normal;
+    color: #ce9178;
 }
 
 h1, h2, h3 {
@@ -34,16 +34,18 @@ h1, h2, h3 {
 
 h1 {
     font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 h2 {
 	font-size: 1.8em;
-    margin-top: 30px;
+    margin-top: 24px;
+    border-bottom: 1px solid #ce9178;;
 }
 
 h3 {
 	font-size: 1.2em;
-	margin-top: 12px;
+    margin-top: 18px;
 }
 
 ul, ol {
@@ -62,10 +64,21 @@ p {
 
 blockquote {
 	margin: 0;
-	padding: 0;
-	padding-left: 0.5em;
-	border-left: 5px solid #569cd6; /* was: #4c56af */
+    padding: 0.5em 10px;
+    border-left: 5px solid #ce9178; /* was: #4c56af */
 }
+
+blockquote p {
+    display: inline;
+}
+
+blockquote p:before {
+    content: "\201C";
+}
+
+blockquote p:after {
+    content: "\201D";
+  }
 
 abbr {
 	cursor: help;
@@ -75,18 +88,18 @@ a abbr {
     cursor: pointer;
 }
 
-strong {
-	font-weight: normal;
-}
-
 a {
 	text-decoration: none;
 	cursor: pointer;
 	border-bottom: 1px dotted #569cd6;
 }
 
-a, strong, abbr:hover { /* highlighting and link color */
+a, abbr:hover { /* highlighting and link color */
 	color: #569cd6;
+}
+
+strong {
+    color: #ce9178;
 }
 
 a:hover, a abbr:hover { /* get into account also the menu links */
