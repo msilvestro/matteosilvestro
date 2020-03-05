@@ -1,5 +1,14 @@
 <?php
+/*
+PageMaker Markdown Engine
+version eta
+by Matteo Silvestro
+CC BY 4.0
+http://creativecommons.org/licenses/by/4.0/
+last update: 05/03/2020
 
+Simple PHP script that renders Markdown pages.
+*/
 include 'lib/Parsedown.php';
 include 'lib/ParsedownExtra.php';
 
@@ -19,7 +28,6 @@ function get_page_title_and_description($page_md) {
 
 function get_other_language($lang) {
     # get the other language
-    # TODO make it more flexible for different languages, not only en and it
     if ($lang == "en") {
         return "it";
     } else if ($lang == "it") {
@@ -27,10 +35,11 @@ function get_other_language($lang) {
     }
 }
 
-$last_update_exploded = explode('/', LAST_UPDATE);
+# Get the year from the last update constant defined at the beginning.
+$last_update_exploded = explode('/', LAST_UPDATE); # this line is mandatory
 $last_update_year = end($last_update_exploded);
 
-# get the language to use
+# Get which language to display the page in.
 if (empty($_GET['lang'])) {
     $lang = DEFAULT_LANGUAGE;
 } else {
@@ -40,18 +49,23 @@ if (empty($_GET['lang'])) {
     }
 }
 
-# get the page to be displayed
+# Get the requeste page name.
 if (empty($_GET['page'])) {
     $page_name = DEFAULT_PAGE;
 } else {
     $page_name = $_GET['page'];
 }
-$page_filename = "pages/$lang/$page_name.md";
-# if no page with such name exists, resort to the 404 error page
-if (!file_exists($page_filename)) {
-    $page_filename = "pages/$lang/404.md";
-}
 
+# Read the menu custom file, with this syntax:
+/*
+# en
+home: Description
+other_link: Other description
+
+# it
+home: Descrizione
+altro_link: Altra descrizione
+*/
 if (file_exists("pages/menu")) {
     $menu_file = trim(file_get_contents("pages/menu", "r"));
     $menu = array();
@@ -92,7 +106,11 @@ if ($lang == DEFAULT_LANGUAGE) {
     $lang_prefix = "$lang/";
 }
 
-# open the page file and read it
+# Get the Markdown file to use to render the requested page.
+$page_filename = "pages/$lang/$page_name.md";
+if (!file_exists($page_filename)) { # no file exists, show 404 error page
+    $page_filename = "pages/$lang/404.md";
+}
 if (file_exists($page_filename)) {
     $page_md = file_get_contents($page_filename);
 } else {
@@ -104,14 +122,16 @@ if (!$page_md) {
 An error occurred.";
 }
 
-# if the page is 404, insert the page name
+# If the page is 404, insert the page name.
 $page_md = str_replace("<!-- page here -->", $page_name, $page_md);
 
-# parse the markdown file
+# Parse the Markdown file.
 $Parsedown = new ParsedownExtra();
 $page_html = $Parsedown->text($page_md);
 
-# extract title and description from the page
+# Extract title and description from the page (first and second line).
+# Title and description are used for both meta tags and to be displayed on the
+# page.
 list($page_title, $page_description) = get_page_title_and_description($page_md);
 if ($page_name != "home") {
     $page_title = "$page_title &mdash; Matteo Silvestro";

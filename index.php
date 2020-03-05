@@ -49,6 +49,7 @@ last update: <?= LAST_UPDATE ?>
 
 <div id="layout">
 
+<!-- menu -->
 <?php if ($menu): ?>
 <div id="menu">
 <h2 class="hidden">Menu</h2>
@@ -66,11 +67,12 @@ last update: <?= LAST_UPDATE ?>
 <hr />
 <?php endif; ?>
 
+<!-- page -->
 <?= $page_html ?>
 
 <hr />
 
-<!-- piè pagina -->
+<!-- footer -->
 <div id="footer">
 
 <?php if ($lang == "it"): ?>
