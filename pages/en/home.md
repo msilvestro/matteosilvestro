@@ -1,6 +1,8 @@
-# **Matteo Silvestro**'s page
+# Matteo Silvestro's page
 
-Good ideas don't take time. They take a lot of bad ideas first.
+My personal page, where I can present myself and showcase my works.
+
+> Good ideas don't take time. They take a lot of bad ideas first.
 
 ## Experiences not to be missed
 

@@ -1,5 +1,7 @@
 # University
 
+Most important university projects.
+
 ## Index
 
 * Bachelor's thesis: [MCTS and videogames: an application for Pokémon Contest Spectacular](#trithesis)
@@ -7,7 +9,7 @@
 * Master's thesis: [Computer-Assisted Evaluation of Story-Driven Interactive Storytelling Systems](#sdsthesis)
 
 
-## Bachelor's thesis: **MCTS and videogames: an application for Pokémon Contest Spectacular** {#trithesis}
+## MCTS and videogames: an application for Pokémon Contest Spectacular {#trithesis}
 
 This is the section about the work done for my bachelor's thesis in Mathematics at the University of Turin.
 
@@ -38,7 +40,7 @@ It is possible to download the software made for this thesis in different versio
 * [Source code](/files/uni/tri/contest_source.zip) with some comments to make code more readable. It is released under MIT license, for more information read the `LICENSE` file.
 
 
-## Essay: **Coupling from the past** {#sdscftp}
+## Coupling from the past {#sdscftp}
 
 Markov chain Monte Carlo methods allow to compute difficult integrals and sample from complex distributions, opening new possibilities. Gibbs sampler gained a lot of popularity, dealing with multidimensional problems. The main issue is to be able to sample directly from the stationary distribution of the Markov chain, that is to get perfect samples.
 
@@ -48,7 +50,7 @@ An efficient algorithm to accomplish that is the coupling from the past (CFTP) a
 * [Implementation](/files/uni/sds/image_restore.R) of the image restoration algorithm in R.
 
 
-## Master's thesis: **Computer-Assisted Evaluation of Story-Driven Interactive Storytelling Systems** {#sdsthesis}
+## Computer-Assisted Evaluation of Story-Driven Interactive Storytelling Systems {#sdsthesis}
 
 This is the section about the work done for my thesis for the Master's Degree in Stochastics and Data Science at the University of Turin.
 

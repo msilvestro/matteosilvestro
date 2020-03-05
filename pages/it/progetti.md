@@ -1,8 +1,8 @@
 # Progetti
 
-I miei progetti personali.
+I progetti più importanti a cui ho lavorato, che siano scritti come note su uno spartito musicale o come linee di codice.
 
-## Cover musicali
+## Cover musicali {#cover-musicali}
 
 Vai sul mio [canale YouTube][yt] e sul mio [profilo Musescore][ms] per tutte le cover!
 
@@ -25,7 +25,7 @@ Vai sul mio [canale YouTube][yt] e sul mio [profilo Musescore][ms] per tutte le 
     * [🎵 Cover in formato MP3][tsds_mp3]
     * [🎵 Cover in formato WAV][tsds_wav]
 
-## Progetti in codice
+## Progetti in codice {#progetti-in-codice}
 
 1. [Qlik Butler][qlik_butler], una suite grafica di strumenti per facilitare la gestione di installazioni Qlik Sense e NPrinting. Creata durante il periodo lavorativo in Intesa Sanpaolo a questo scopo.
 

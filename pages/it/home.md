@@ -1,6 +1,8 @@
-# La pagina di **Matteo Silvestro**
+# La pagina di Matteo Silvestro
 
-Per le ottime idee non serve tempo. Servono prima un sacco di pessime idee.
+La mia pagina personale, in cui posso presentare me stesso e mostrare i miei lavori.
+
+> Per le buone idee non serve tempo. Servono prima un sacco di pessime idee.
 
 ## Opere da non perdere
 

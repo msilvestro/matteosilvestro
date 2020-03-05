@@ -2,128 +2,27 @@
 define("DEFAULT_LANGUAGE", "en");
 $SUPPORTED_LANGUAGES = ["it", "en"];
 define("DEFAULT_PAGE", "home");
-define("LAST_UPDATE", "04/03/2020");
+define("LAST_UPDATE", "05/03/2020");
 define("VERSION", "eta");
 
-$last_update_exploded = explode('/', LAST_UPDATE);
-$last_update_year = end($last_update_exploded);
-
-include 'lib/Parsedown.php';
-include 'lib/ParsedownExtra.php';
-include 'lib/helper.php';
-
-# get the language to use
-if (empty($_GET['lang'])) {
-    $lang = DEFAULT_LANGUAGE;
-} else {
-    $lang = $_GET['lang'];
-    if (!in_array($lang, $SUPPORTED_LANGUAGES)) {
-        $lang = DEFAULT_LANGUAGE;
-    }
-}
-
-# get the page to be displayed
-if (empty($_GET['page'])) {
-    $page_name = DEFAULT_PAGE;
-} else {
-    $page_name = $_GET['page'];
-}
-$page_filename = "pages/$lang/$page_name.md";
-# if no page with such name exists, resort to the 404 error page
-if (!file_exists($page_filename)) {
-    $page_filename = "pages/$lang/404.md";
-}
-
-# URL of the same page but in another language
-# i.e. the page "thesis" (en) becomes "tesi" (it)
-$foreign_page_url = "";
-
-# get the menu
-if (file_exists("pages/pages.json")) {
-    $pages_json = file_get_contents("pages/pages.json", "r");
-} else {
-    $pages_json = false;
-}
-if ($pages_json) {
-    $pages_array = json_decode($pages_json, true);
-    $menu_html = '<div id="menu">
-<h2 class="hidden">Menu</h2>
-{ <ul> ';
-    foreach ($pages_array as $id=>$details) {
-        $url = $details[$lang]["url"];
-        if ($url == ".") {
-            $short_name = DEFAULT_PAGE;
-        } else {
-            $short_name = $url;
-        }
-        $full_name = htmlspecialchars($details[$lang]["full_name"], ENT_COMPAT, 'UTF-8');
-        if ($short_name == $page_name) {
-            # the active page must be shown normal
-            $menu_html .= "<li>/$short_name</li> ";
-            # set the other language URL
-            $other_lang = get_other_language($lang);
-            if (isset($details[$other_lang])) {
-                $foreign_page_url = $details[$other_lang]["url"];
-            } else {
-                $foreign_page_url = "";
-            }
-        } else {
-            # if the page is not in the default language (e.g. it), all pages
-            # are in /it/, so add it to url
-            if ($lang == DEFAULT_LANGUAGE) {
-                $lang_prefix = "";
-            } else {
-                $lang_prefix = "$lang/";
-            }
-            # all non active pages are shown as links
-            $menu_html .= "<li>/<a href=\"/$lang_prefix$url\" target=\"_self\"><abbr title=\"$full_name\">$short_name</abbr></a></li> ";
-        }
-    }
-    $menu_html .= "</ul> }
-</div>";
-}
-
-# open the page file and read it
-if (file_exists($page_filename)) {
-    $page_md = file_get_contents($page_filename);
-} else {
-    $page_md = false;
-}
-if (!$page_md) {
-    $page_md = "# Error
-
-An error occurred.";
-}
-
-# if the page is 404, insert the page name
-$page_md = str_replace("<!-- page here -->", $page_name, $page_md);
-
-# parse the markdown file
-$Parsedown = new ParsedownExtra();
-$page_html = $Parsedown->text($page_md);
-
-# extract title and description from the page
-list($page_title, $page_description) = get_page_title_and_description($page_md);
-if ($page_name != "home") {
-    $page_title = "$page_title &mdash; Matteo Silvestro";
-}
+include 'lib/PageMaker.php';
 ?>
-<!DOCTYPE html>
 <!--
 Matteo Silvestro's page / La pagina di Matteo Silvestro
-version epsilon
+version <?= VERSION ?>
 by Matteo Silvestro
 CC BY 4.0
 http://creativecommons.org/licenses/by/4.0/
-last update: <?php echo LAST_UPDATE; ?>
+last update: <?= LAST_UPDATE ?>
 
 -->
-<html lang="<?php echo $lang; ?>">
+<!DOCTYPE html>
+<html lang="<?= $lang ?>">
 <head>
 
-<title><?php echo $page_title; ?></title>
+<title><?= $page_title ?></title>
 
-<meta name="description" content="<?php echo $page_description; ?>">
+<meta name="description" content="<?= $page_description ?>">
 <meta name="author" content="Matteo Silvestro">
 <meta name="generator" content="Visual Studio Code">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8">
@@ -150,13 +49,24 @@ last update: <?php echo LAST_UPDATE; ?>
 
 <div id="layout">
 
-<?php if (isset($menu_html)): ?>
-<?php echo $menu_html; ?>
+<?php if ($menu): ?>
+<div id="menu">
+<h2 class="hidden">Menu</h2>
+{ <ul>
+<?php foreach($menu[$lang] as $short_name=>$description): ?>
+<?php if ($short_name == $page_name): ?>
+<li>/<?= $short_name ?></li>
+<?php else: ?>
+<li>/<a href="/<?= $short_name == DEFAULT_PAGE ? $lang_prefix : $lang_prefix.$short_name ?>" target="_self"><abbr title="<?= $description ?>"><?= $short_name ?></abbr></a></li>
+<?php endif; ?>
+<?php endforeach; ?>
+</ul> }
+</div>
 
 <hr />
 <?php endif; ?>
 
-<?php echo $page_html; ?>
+<?= $page_html ?>
 
 <hr />
 

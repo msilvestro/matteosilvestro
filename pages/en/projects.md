@@ -1,8 +1,8 @@
 # Projects
 
-My personal projects.
+The most important projects I have worked on, whether they are written as notes in a music score or as code lines.
 
-## Music covers
+## Music covers {#music-covers}
 
 Check my [YouTube channel][yt] and my [Musescore profile][ms] for all music covers!
 
@@ -25,7 +25,7 @@ Check my [YouTube channel][yt] and my [Musescore profile][ms] for all music cove
     * [🎵 Cover in MP3 format][tsds_mp3]
     * [🎵 Cover in WAV format][tsds_wav]
 
-## Coding projects
+## Coding projects {#coding-projects}
 
 1. [Qlik Butler][qlik_butler], a collection of graphical tools to help managing Qlik Sense and NPrinting clusters. Made while working in Intesa Sanpaolo for this purpose.
 

@@ -1,12 +1,14 @@
 # Università
 
+Progetti universitari di maggiore rilevanza.
+
 ## Indice
 
 * Tesi triennale: [MCTS e videogiochi: un'applicazione per le Gare Pokémon Live](#trithesis)
 * Saggio: [Coupling from the past](#sdscftp)
 * Tesi magistrale: [Computer-Assisted Evaluation of Story-Driven Interactive Storytelling Systems](#sdsthesis)
 
-## Tesi triennale: **MCTS e videogiochi: un'applicazione per le Gare Pokémon Live** {#trithesis}
+## MCTS e videogiochi: un'applicazione per le Gare Pokémon Live {#trithesis}
 
 Questa è la sezione dedicata al lavoro effettuato per la mia tesi di Laurea Triennale in Matematica all'Università degli Studi di Torino.
 
@@ -37,7 +39,7 @@ Qui sono disponibili alcuni documenti relativi alla tesi.
 * [Codice sorgente](/files/uni/tri/contest_source.zip) con alcuni commenti per renderne più facile la lettura. È rilasciato sotto licenza MIT, per maggiori informazioni consultare il file `LICENSE`.
 
 
-## Saggio: **Coupling from the past** {#sdscftp}
+## Coupling from the past {#sdscftp}
 
 I metodi *Markov Chain Monte Carlo* permettono di calcolare integrali difficili e di campionare da distribuzioni complicate, aprendo nuove possibilità. Il campionamento di Gibbs è riuscito a raggiungere una notevole popolarità, occupandosi di problemi multidimensionali. Il problema principale riguarda la possibilità di campionare direttamente dalla distribuzione stazionaria della catena di Markov, ovvero di ottenere campioni perfetti.
 
@@ -47,7 +49,7 @@ Un algoritmo efficiente per ottenere questo risultato si chiama *coupling from t
 * [Implementazione](/files/uni/sds/image_restore.R) dell'algoritmo di recupero dell'immagine in R.
 
 
-## Tesi magistrale: **Computer-Assisted Evaluation of Story-Driven Interactive Storytelling Systems** {#sdsthesis}
+## Computer-Assisted Evaluation of Story-Driven Interactive Storytelling Systems {#sdsthesis}
 
 Questa è la sezione dedicata al lavoro effettuato per la mia tesi magistrale per il Master's Degree in Stochastics and Data Science all'Università degli Studi di Torino.
 
