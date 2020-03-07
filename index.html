@@ -8,12 +8,9 @@
         <meta name="author" content="Matteo Silvestro">
         <meta name="generator" content="Visual Studio Code">
 
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="macchiato.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/animate.js"></script> 
     </head>
     <body>
         <div id="layout">
@@ -21,10 +18,19 @@
             <div id="title">
                 <h1>La pagina di Matteo Silvestro</h1>
             </div>
+
+            <div id="menu">
+                <h2 class="hidden">Menu</h2>
+                <ul>
+                    <li><a href="#introduzione">introduzione</a></li>
+                    <li><a href="#progetti">progetti</a></li>
+                </ul>
+            </div>
             
-            <div class="header expanded">
+            <div class="header" id="introduzione">
                 <h2>Introduzione</h2>
             </div>
+
             <div class="page">
                 <div class="card">
                     <div class="column">
@@ -37,14 +43,18 @@
                         <h3>La mia persona</h3>
                         
                         <blockquote>Per le buone idee non serve tempo. Servono prima un sacco di pessime idee.</blockquote>
+
                     </div>
                 </div>
 
             </div>
 
-            <div class="header">
+            <hr>
+
+            <div class="header" id="progetti">
                 <h2>Progetti</h2>
             </div>
+
             <div class="page">
                 <div class="card">
                     <div class="column">
@@ -62,6 +72,8 @@
                     </div>
                 </div>
 
+                <hr>
+
                 <div class="card">
                     <div class="column">
                         
@@ -77,7 +89,7 @@
                 </div>
             </div>
 
-            <div id="footer">Matteo Silvestro 2020 - Version θ</div>
+            <div id="footer">Matteo Silvestro 2020 — Version θ — Stile <a href="macchiato.css">Macchiato</a></div>
 
         </div>
 

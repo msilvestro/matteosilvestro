@@ -1,5 +1,16 @@
+/*--
+Macchiato CSS Style - Valid CSS3
+by Matteo Silvestro
+CC BY 4.0
+http://creativecommons.org/licenses/by/4.0/
+last update: 07/03/2020
+--*/
+
+/* -- Basic tags -- */
+
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* account for any border and padding in the values
+                            you specify for an element's width and height */
 }
 
 html {
@@ -7,26 +18,42 @@ html {
 }
 
 body {
-    background-color: #121113;
-    color: #fbfff1;
-    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
 }
 
-h1, h2, h3, strong {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
-    color: #6788e5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    color: #b5bd68;
 }
 
 h1 {
-    font-size: 2.4em;
     text-transform: uppercase;
+    font-size: 2.4em;
 }
 
 h2 {
     text-transform: uppercase;
     font-size: 1.8em;
+    margin-top: 20px;
 }
 
 h3 {
@@ -34,19 +61,25 @@ h3 {
     margin-bottom: 10px;
 }
 
-a {
-    color: #8e3b46;
-    text-decoration: none;
+ul,
+ol {
+    margin: 0;
+    padding-left: 20px;
 }
 
-a:hover {
-    border-bottom: 1px solid #8e3b46;
+ul {
+    list-style: square;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 blockquote {
     margin: 0;
     padding: 0.5em 10px;
-    border-left: 5px solid #6788e5;
+    border-left: 5px solid #b5bd68;
 }
 
 blockquote:before {
@@ -57,42 +90,86 @@ blockquote:after {
     content: "\201D";
 }
 
+a {
+    text-decoration: none;
+    color: #f99157;
+    cursor: pointer;
+}
+
+a:hover {
+    border-bottom: 1px solid #f99157;
+}
+
+abbr {
+    cursor: help;
+}
+
+hr,
+.hidden {
+    display: none;
+}
+
+/* -- Site and pages layout -- */
+
 #layout {
     max-width: 900px;
     margin: 0 auto;
+    padding: 20px;
+    color: #fbfff1;
 }
 
 #title {
     width: 100%;
     text-align: center;
+    background-image: url("img/matteo_silvestro.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 4em;
 }
+
+#title h1 {
+    visibility: hidden;
+}
+
+/* -- Menu -- */
+
+#menu {
+    width: 100%;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 1.5em;
+}
+
+#menu ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menu ul:before {
+    content: "{";
+}
+
+#menu ul:after {
+    content: "}";
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li:before {
+    content: "#";
+}
+
+/* -- Pages layout -- */
 
 .header {
     width: 100%;
-    border-bottom: 1px solid #6788e5;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.header h2 {
-    display: inline; /* to display the arrow */
-}
-
-.header:after {
-    color: #6788e5;
-    content: '↓';
-    font-weight: bold;
-    font-size: 1.8em;
-    float: right;
-}
-
-.header.expanded:after {
-    content: '↑';
-}
-
-.page {
-    overflow: hidden;
-    transition: height 0.5s ease-out;
+    margin-top: 40px;
+    border-bottom: 1px solid #b5bd68;
 }
 
 .card {
@@ -117,20 +194,36 @@ blockquote:after {
     margin-bottom: 20px;
 }
 
+/* -- Page specific styles -- */
+
+/* When changing "identity", change the colour as is in the website. */
+.column img {
+    background-color: gray;
+}
+
+/* -- Footer --  */
+
 #footer {
     width: 100%;
     margin-top: 20px;
+    color: #819a95;
 }
 
-@media (max-width:760px) {
+/* -- Mobile phones fixes -- */
+
+@media (max-width: 600px) {
+    #title {
+        height: 3em;
+    }
+
     .card {
-        flex-direction: column;
+        flex-direction: column-reverse; /* display columns one above the other */
         padding: 0 20px;
     }
 
     .column {
         border: 0;
-        border-bottom: 1px solid #fbfff1;
+        border-top: 1px solid #fbfff1;
         padding: 20px 0;
     }
 }
