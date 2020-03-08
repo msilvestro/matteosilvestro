@@ -78,6 +78,7 @@ p {
 
 blockquote {
     margin: 0;
+    margin-bottom: 10px;
     padding: 0.5em 10px;
     border-left: 5px solid #b5bd68;
 }
@@ -101,6 +102,7 @@ a:hover {
 }
 
 abbr {
+    text-decoration: none;
     cursor: help;
 }
 
@@ -115,7 +117,7 @@ hr,
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-    color: #fbfff1;
+    color: white;
 }
 
 #title {
@@ -174,31 +176,163 @@ hr,
 
 .card {
     display: flex;
+    flex-direction: row-reverse;
     width: 100%;
     padding: 20px 0;
-    border-bottom: 1px solid #fbfff1;
+    border-bottom: 1px solid white;
 }
 
 .column {
     flex: 1;
     padding: 0 20px;
-    border-right: 1px solid #fbfff1;
+    border-right: 1px solid white;
+}
+
+.column:first-child {
+    padding-right: 0;
+    border: 0;
 }
 
 .column:last-child {
-    border: 0;
+    padding-left: 0;
 }
 
 .column img {
     width: 100%;
-    margin-bottom: 20px;
+}
+
+.column:last-child ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.column:last-child ul li {
+    margin-top: 8px;
+}
+
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.videothumbnail {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.videothumbnail div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
 }
 
 /* -- Page specific styles -- */
 
-/* When changing "identity", change the colour as is in the website. */
-.column img {
-    background-color: gray;
+a#fb:hover,
+#tw:hover,
+#ig:hover,
+#lf:hover,
+#st:hover,
+#yt:hover,
+#ms:hover,
+#gh:hover {
+    border-bottom: 0;
+}
+
+a#fb {
+    color: black;
+    background-color: #3b5998;
+}
+
+a#fb:hover {
+    color: #3b5998;
+    background-color: black;
+}
+
+#tw {
+    color: black;
+    background-color: #00acee;
+}
+
+#tw:hover {
+    color: #00acee;
+    background-color: black;
+}
+
+#ig {
+    color: black;
+    background-color: #d01e86;
+}
+
+#ig:hover {
+    color: #d01e86;
+    background-color: black;
+}
+
+#lf {
+    color: black;
+    background-color: #d51007;
+}
+
+#lf:hover {
+    color: #d51007;
+    background-color: black;
+}
+
+#st {
+    color: black;
+    background-color: #808080;
+}
+
+#st:hover {
+    color: #808080;
+    background-color: black;
+}
+
+#yt {
+    color: black;
+    background-color: #af100a;
+}
+
+#yt:hover {
+    color: #af100a;
+    background-color: black;
+}
+
+#ms {
+    color: black;
+    background-color: #1f74bd;
+}
+
+#ms:hover {
+    color: #1f74bd;
+    background-color: black;
+}
+
+#gh {
+    color: white;
+    background-color: #24292e;
+}
+
+#gh:hover {
+    color: #24292e;
+    background-color: white;
 }
 
 /* -- Footer --  */
@@ -217,13 +351,13 @@ hr,
     }
 
     .card {
-        flex-direction: column-reverse; /* display columns one above the other */
-        padding: 0 20px;
+        flex-direction: column; /* display columns one above the other */
+        padding: 0;
+        border-bottom: 1px solid white;
     }
 
     .column {
         border: 0;
-        border-top: 1px solid #fbfff1;
         padding: 20px 0;
     }
 }

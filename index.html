@@ -11,6 +11,9 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="macchiato.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="js/macchiato.js"></script>
     </head>
     <body>
         <div id="layout">
@@ -22,8 +25,10 @@
             <div id="menu">
                 <h2 class="hidden">Menu</h2>
                 <ul>
-                    <li><a href="#introduzione">introduzione</a></li>
-                    <li><a href="#progetti">progetti</a></li>
+                    <li><a href="#introduzione">Introduzione</a></li>
+                    <li><a href="#codice">Codice</a></li>
+                    <li><a href="#musica">Musica</a></li>
+                    <li><a href="#universita">Università</a></li>
                 </ul>
             </div>
             
@@ -31,62 +36,131 @@
                 <h2>Introduzione</h2>
             </div>
 
-            <div class="page">
+            <div class="page" id="la-mia-persona">
                 <div class="card">
-                    <div class="column">
-                        <img src="img/persona_matt.png" />
-                        <a href="#">Link #1</a><br>
-                        <a href="#">Link #2</a>
-                    </div>
 
                     <div class="column">
+
                         <h3>La mia persona</h3>
-                        
+
                         <blockquote>Per le buone idee non serve tempo. Servono prima un sacco di pessime idee.</blockquote>
 
+                        <p>Sono un errante con la testa fra le nuvole in cerca di strade non battute. La mia vita è un adagio sostenuto in la minore da suonare con uno <abbr title="Stylophone, Otamatone, Theremin, vanno tutti bene.">strano strumento</abbr>.</p>
+
+                        <p>Ricerco la bellezza nelle ordinate linee di un codice sorgente, nell'armonioso susseguirsi di note su un pentagramma e nella perfezione di una ricercata formula matematica.</p>
+
+                        <p>Le mie identità sono disseminate per la rete, ognuna con il suo scopo.
+                        Su <a href="https://www.facebook.com/msilvestro93" id="fb">Facebook</a> si trova il mio lato più mondano, su <a href="https://twitter.com/msilvestro" id="tw">Twitter</a> brevi raffinati telegrammi e su <a href="https://www.instagram.com/msilvestro93" id="ig">Instagram</a> istanti che hanno catturato la mia attenzione.
+                        Le mie incostanti ossesioni musicali sono documentate su <a href="http://www.lastfm.it/user/msilvestro" id="lf">Last.fm</a>, mentre <a href="http://steamcommunity.com/id/msilvestro/" id="st">Steam</a> tiene traccia delle innumerevoli esperienze videoludiche in cui mi immergo.
+                        I miei progetti musicali sono ospitati su <a href="https://www.youtube.com/c/MatteoSilvestro" id="yt">YouTube</a> e <a href="https://musescore.com/user/4373921" id="ms">MuseScore</a>, mentre <a href="https://github.com/msilvestro" id="gh">GitHub</a> raccoglie le mie opere in codice.</p>
+
+                        <p>Infine mi sento di dare alcuni consigli, assolutamente non imperativi.</p>
+
+                        <p>Guarda <a href="https://www.nbc.com/the-good-place">The Good Place</a>.</p>
+
+                        <p>Gioca a <a href="https://thatgamecompany.com/journey/">Journey</a> e <a href="https://atlus.com/p5r/">Persona 5</a>.</p>
+
+                        <p>Leggi <a href="https://www.quietrev.com/quiet-the-book/">Quiet: Il potere degli introversi in un mondo che non sa smettere di parlare</a>.</p>
+
                     </div>
+
+                    <div class="column">
+
+                        <img src="img/persona_matt.png">
+
+                        <ul>
+                            <li><a href="files/cv/cv_it.pdf">Il mio curriculum vitae</a></li>
+                            <li><a href="https://msilvestro.tumblr.com/">Piccolo blog personale</a></li>
+                            <li><a href="https://twitter.com/intent/tweet?screen_name=msilvestro">Invia un tweet a @msilvestro</a></li>
+                            <li><a href="mailto:matteosilvestro@altervista.org">Scrivi una mail</a></li>
+                        </ul>
+
+                    </div>
+
                 </div>
 
             </div>
 
             <hr>
 
-            <div class="header" id="progetti">
-                <h2>Progetti</h2>
+            <div class="header" id="musica">
+                <h2>Musica</h2>
             </div>
 
             <div class="page">
+
                 <div class="card">
+
                     <div class="column">
+
+                        <h3>Tu Scendi Dalle Stelle</h3>
+
+                        <p>Un solitario Game Boy Color canta una versione a cappella di "Tu Scendi Dalle Stelle".</p>
+
+                        <p>Questo è il testo del primo verso per accompagnare il video:</p>
+                        <p>«Tu scendi dalle stelle,<br>
+                        o Re del Cielo,<br>
+                        e vieni in una grotta<br>
+                        al freddo, al gelo.<br><br>
+
+                        O Bambino mio Divino,<br>
+                        io ti vedo qui a tremar,<br>
+                        o Dio beato,<br>
+                        e quanto ti costò<br>
+                        l'avermi amato!»</p>
+                    </div>
+
+                    <div class="column">
+
+                        <div class="videothumbnail" onclick="openVideo(this, 'tyYpu07Jms0')">
+                            <img src="https://img.youtube.com/vi/tyYpu07Jms0/maxresdefault.jpg">
+                            <div>▶️</div>
+                        </div>
                         
-                        <a href="#">Link #1</a><br>
-                        <a href="#">Link #2</a>
+                        <ul>
+                            <li><a href="/files/covers/tu_scendi_dalle_stelle/tu_scendi_dalle_stelle.mscz">🎼 Spartito musicale</a></li>
+                            <li><a href="/files/covers/tu_scendi_dalle_stelle/tsdsgb.mp3">🎵 Cover in formato MP3</a></li>
+                            <li><a href="/files/covers/tu_scendi_dalle_stelle/tsdsgb.wav">🎵 Cover in formato WAV</a></li>
+                        </ul>
+
                     </div>
 
-                    <div class="column">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec eleifend diam, eu facilisis nibh. Donec porttitor fermentum sem quis gravida. Phasellus placerat ut odio id finibus. Sed et iaculis mi. Nulla tincidunt id nibh nec sollicitudin. Sed a nunc vel massa consequat sodales. Maecenas pulvinar urna nibh, vitae tincidunt tortor sagittis a. Suspendisse vehicula ex quis mi dapibus gravida. Duis non risus mi. Nullam urna lectus, semper vitae iaculis sit amet, consectetur quis orci. Cras a congue metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed bibendum augue vitae purus ornare auctor. Proin finibus lectus eget quam tincidunt, nec faucibus velit faucibus.
-
-                        Cras odio ligula, consectetur a sem at, finibus bibendum mauris. In interdum diam quis diam pulvinar, vel tempus metus venenatis. Maecenas sit amet venenatis arcu. Maecenas tincidunt pretium felis, ut tempus odio placerat et. In urna turpis, maximus ac malesuada sit amet, fermentum a ligula. Aenean nisl sapien, viverra in nunc sed, placerat suscipit leo. Phasellus mauris augue, fermentum vitae augue pulvinar, pellentesque elementum magna. Integer ullamcorper scelerisque posuere. Morbi tincidunt vitae tellus et cursus. Pellentesque scelerisque dui eu felis malesuada sollicitudin. Mauris eget vulputate sapien, ut blandit urna. Proin non ex ornare lectus scelerisque suscipit.
-
-                        Quisque finibus purus sit amet accumsan convallis. Aenean aliquam neque iaculis suscipit lobortis. Nunc malesuada sed dui id lobortis. Nunc varius blandit convallis. Suspendisse vitae tortor at sem convallis finibus. In quis lectus non massa accumsan mollis. Suspendisse nec ex eu tortor rutrum accumsan luctus vel augue.
-                    </div>
                 </div>
 
                 <hr>
 
                 <div class="card">
+
                     <div class="column">
+
+                        <h3>Trilobyte (Rogue Legacy)</h3>
+
+                        <p>Ancor prima di giocare a Rogue Legacy mi sono innamorato di questo brano musicale (un mio amico me l'aveva fatto ascoltare). Poi ho giocato al videogioco e anche quello era fantastico! Volevo farne una cover ed eccola qui! Sono molto orgoglioso del mio lavoro perché ho scritto l'intero spartito musicale da zero, visto che non riuscivo a trovare nulla online. Penso che sia venuto proprio bene!</p>
+
+                        <p>Dopo aver creato il file MIDI, non sapevo quali suoni usare. Volevo che la cover richiamasse l'originale, ma che avesse allo stesso tempo uno stile suo.
+                        Mi sono quindi venuti in mente i buoni vecchi suoni della colonna sonora di Monkey Island 2 (versione Roland MT-32) e ho deciso di usarli!
+                        Spero che questa cover vi piacerà!</p>
+                    </div>
+
+                    <div class="column">
+
+                        <div class="videothumbnail" onclick="openVideo(this, 'BbQ2w-cUqnU')">
+                            <img src="https://img.youtube.com/vi/BbQ2w-cUqnU/maxresdefault.jpg">
+                            <div>▶️</div>
+                        </div>
                         
-                        <a href="#">Link #1</a><br>
-                        <a href="#">Link #2</a>
+                        <ul>
+                            <li><a href="/files/covers/trilobyte/Trilobyte.pdf">🎼 Spartito musicale</a></li>
+                            <li><a href="/files/covers/trilobyte/Trilobyte.mp3">🎵 Cover in formato MP3</a></li>
+                            <li><a href="/files/covers/trilobyte/Trilobyte.wav">🎵 Cover in formato WAV</a></li>
+                            <li><a href="/files/covers/trilobyte/Trilobyte.mid">🎶 File MIDI</a></li>
+                            <li><a href="/files/covers/trilobyte/Trilobyte.ly">📄 Sorgente Lilypond</a></li>
+                        </ul>
+
                     </div>
 
-                    <div class="column">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec eleifend diam, eu facilisis nibh. Donec porttitor fermentum sem quis gravida. Phasellus placerat ut odio id finibus. Sed et iaculis mi. Nulla tincidunt id nibh nec sollicitudin. Sed a nunc vel massa consequat sodales. Maecenas pulvinar urna nibh, vitae tincidunt tortor sagittis a. Suspendisse vehicula ex quis mi dapibus gravida. Duis non risus mi. Nullam urna lectus, semper vitae iaculis sit amet, consectetur quis orci. Cras a congue metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed bibendum augue vitae purus ornare auctor. Proin finibus lectus eget quam tincidunt, nec faucibus velit faucibus.
-
-                        Cras odio ligula, consectetur a sem at, finibus bibendum mauris. In interdum diam quis diam pulvinar, vel tempus metus venenatis. Maecenas sit amet venenatis arcu. Maecenas tincidunt pretium felis, ut tempus odio placerat et. In urna turpis, maximus ac malesuada sit amet, fermentum a ligula.
-                    </div>
                 </div>
+
             </div>
 
             <div id="footer">Matteo Silvestro 2020 — Version θ — Stile <a href="macchiato.css">Macchiato</a></div>
