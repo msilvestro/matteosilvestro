@@ -83,11 +83,16 @@ blockquote {
     border-left: 5px solid #b5bd68;
 }
 
-blockquote:before {
+blockquote p {
+    margin: 0;
+    padding: 0;
+}
+
+blockquote p:before {
     content: "\201C";
 }
 
-blockquote:after {
+blockquote p:after {
     content: "\201D";
 }
 
@@ -197,6 +202,12 @@ hr,
     padding-left: 0;
 }
 
+.card p.date {
+    width: 100%;
+    margin-top: -0.6em;
+    color: #819a95;
+}
+
 .column img {
     width: 100%;
 }
@@ -239,12 +250,13 @@ hr,
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3em;
+    font-size: 5em;
 }
 
 /* -- Page specific styles -- */
 
 a#fb:hover,
+a#li:hover,
 #tw:hover,
 #ig:hover,
 #lf:hover,
@@ -262,6 +274,16 @@ a#fb {
 
 a#fb:hover {
     color: #3b5998;
+    background-color: black;
+}
+
+a#li {
+    color: black;
+    background-color: #0077b5;
+}
+
+a#li:hover {
+    color: #0077b5;
     background-color: black;
 }
 
