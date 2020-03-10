@@ -1,0 +1,160 @@
+/*--
+Cappuccino CSS Style - Valid CSS3
+by Matteo Silvestro
+CC BY 4.0
+http://creativecommons.org/licenses/by/4.0/
+last update: 10/03/2020
+--*/
+
+* {
+    box-sizing: border-box; /* account for any border and padding in the values
+                            you specify for an element's width and height */
+}
+
+body {
+    background-color: #262626;
+}
+
+#layout {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #eeeeee;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+.card{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 4em;
+}
+
+.title {
+    height: 3em;
+    margin-bottom: 1em;
+}
+
+.column.left {
+    flex: 2;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 4em;
+}
+
+.column.left img {
+    width: 100%;
+    border: 1px solid #eeeeee;
+}
+
+.column.right {
+    flex: 3;
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+a:hover {
+    color: #262626;
+    background-color: #eeeeee;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.column.right ul {
+    padding-left: 1em;
+}
+
+.column.right ul li::before {
+    content: "⁎";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+blockquote {
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+    border-left: 1px solid #eeeeee;
+}
+
+blockquote p {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.column.right p:first-of-type::first-letter {
+    font-size: 3.3em;
+    float: left;
+    margin-right: .08em;
+}
+
+.videothumbnail {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 1em;
+}
+
+.videothumbnail:hover div {
+    color: #262626;
+    background-color: #eeeeee;
+}
+
+.videothumbnail div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    background-color: #262626;
+}
+
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 1em;
+}
+
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+abbr {
+    text-decoration: none;
+    border-bottom: 1px dotted #eeeeee;
+    cursor: help;
+}

@@ -1,10 +1,21 @@
 $( document ).ready(function() {
-    var personae = ['fb', 'li', 'tw', 'ig', 'lf', 'st', 'yt', 'ms', 'gh']
-    $('#la-mia-persona a').each(function() {
-        if (personae.includes($(this).attr('id'))) {
+    var identities = {
+        'Facebook': '#3b5998',
+        'LinkedIn': '#0077b5',
+        'Twitter': '#00acee',
+        'Instagram': '#d01e86',
+        'Last.fm': '#d51007',
+        'Steam': '#808080',
+        'YouTube': '#af100a',
+        'MuseScore': '#1f74bd',
+        'GitHub': '#24292e'
+    }
+    $('#la-mia-persona .column.right a').each(function() {
+        console.log($(this).html())
+        if (Object.keys(identities).includes($(this).html())) {
             $(this).hover(
                 function() {
-                    $('#la-mia-persona img').css('background-color', $(this).css('color'))
+                    $('#la-mia-persona img').css('background-color', identities[$(this).html()])
                 },
                 function() {
                     $('#la-mia-persona img').css('background-color', '')
