@@ -2,8 +2,7 @@
 
 ### Tu Scendi Dalle Stelle
 
-28 dic 2019
-{: class="date" }
+<!--28 dic 2019-->
 
 Un solitario Game Boy Color canta una versione a cappella di "Tu Scendi Dalle Stelle".
 
@@ -24,9 +23,9 @@ l'avermi amato!»
 
 <!-- video=tyYpu07Jms0 -->
 
-* [🎼 Spartito musicale][tsds_score]
-* [🎵 Cover in formato MP3][tsds_mp3]
-* [🎵 Cover in formato WAV][tsds_wav]
+* [Spartito musicale][tsds_score]
+* [Cover in formato MP3][tsds_mp3]
+* [Cover in formato WAV][tsds_wav]
 
 [tsds_score]: /files/covers/tu_scendi_dalle_stelle/tu_scendi_dalle_stelle.mscz
 [tsds_mp3]: /files/covers/tu_scendi_dalle_stelle/tsdsgb.mp3
@@ -35,8 +34,7 @@ l'avermi amato!»
 
 ### Trilobyte (Rogue Legacy)
 
-24 ago 2017
-{: class="date" }
+<!--24 ago 2017-->
 
 Ero a casa di un amico e l'ascolto di questo brano, *Trilobyte*, catturò subito la mia attenzione, facendomi infatuare. Dopo aver dedicato diverse ore a *Rogue Legacy*, il videogioco da cui è tratta, questo sentimento non ha fatto altro che rafforzarsi.
 
@@ -48,11 +46,11 @@ Il soundfont scelto è ispirato ai suoni del Roland MT-32, che avevo già apprez
 
 <!-- video=BbQ2w-cUqnU -->
 
-* [🎼 Spartito musicale][trilobyte_score]
-* [🎵 Cover in formato MP3][trilobyte_mp3]
-* [🎵 Cover in formato WAV][trilobyte_wav]
-* [🎶 File MIDI][trilobyte_midi]
-* [📄 Sorgente Lilypond][trilobyte_ly]
+* [Spartito musicale][trilobyte_score]
+* [Cover in formato MP3][trilobyte_mp3]
+* [Cover in formato WAV][trilobyte_wav]
+* [File MIDI][trilobyte_midi]
+* [Sorgente Lilypond][trilobyte_ly]
 
 [trilobyte_score]: /files/covers/trilobyte/Trilobyte.pdf
 [trilobyte_mp3]: /files/covers/trilobyte/Trilobyte.mp3
@@ -63,8 +61,7 @@ Il soundfont scelto è ispirato ai suoni del Roland MT-32, che avevo già apprez
 
 ### Sigla di Doctor Who
 
-12 giu 2016
-{: class="date" }
+<!--12 giu 2016-->
 
 La sigla di *Doctor Who*, composta nel 1963 da Ron Grainer, realizzata da Delia Derbyshire e dal BBC Radiophonic Workshop. La cover è stata creata con il Korg DSN-12 su un Nintendo 3DS XL.
 
@@ -72,8 +69,8 @@ La sigla di *Doctor Who*, composta nel 1963 da Ron Grainer, realizzata da Delia 
 
 <!-- video=NfxWFH7sd8w -->
 
-* [🎵 Cover in formato MP3][dwtheme_mp3]
-* [🎵 Cover in formato FLAC][dwtheme_flac]
+* [Cover in formato MP3][dwtheme_mp3]
+* [Cover in formato FLAC][dwtheme_flac]
 
 [dwtheme_mp3]: /files/covers/dsn_12/dwtheme.mp3
 [dwtheme_flac]: /files/covers/dsn_12/dwtheme.flac
@@ -81,8 +78,7 @@ La sigla di *Doctor Who*, composta nel 1963 da Ron Grainer, realizzata da Delia 
 
 ### Reconstructing More Science
 
-5 feb 2012
-{: class="date" }
+<!--5 feb 2012-->
 
 La mia versione di *Reconstructing More Science*, tratta dalla colonna sonora di *Portal 2*, al pianoforte.
 
@@ -94,9 +90,9 @@ L'adattamento è basato su quello di [Taioo][taioo], a cui ho aggiunto la parte 
 
 <!-- video=vd6Nx3trzUs -->
 
-* [🎼 Spartito per pianoforte][reconstructing_piano]
-* [🎶File MIDI][reconstructing_midi]
-* [📄 Sorgente Lilypond][reconstructing_ly]
+* [Spartito per pianoforte][reconstructing_piano]
+* [File MIDI][reconstructing_midi]
+* [Sorgente Lilypond][reconstructing_ly]
 
 [reconstructing_piano]: /files/covers/reconstructing_more_science/Reconstructing%20more%20science.pdf
 [reconstructing_midi]: /files/covers/reconstructing_more_science/Reconstructing%20more%20science.midi
@@ -105,8 +101,7 @@ L'adattamento è basato su quello di [Taioo][taioo], a cui ho aggiunto la parte 
 
 ### Inno d'Italia
 
-17 mar 2011
-{: class="date" }
+<!--17 mar 2011-->
 
 L'*Inno d'Italia* suonato interamente con lo *Stylophone*, il piccolo organo elettronico.
 

@@ -9,9 +9,9 @@ Sono un errante con la testa fra le nuvole in cerca di strade non battute. La mi
 Ricerco la bellezza nelle ordinate linee di un codice sorgente, nell'armonioso susseguirsi di note su un pentagramma e nella perfezione di una ricercata formula matematica.
 
 Le mie identità sono disseminate per la rete, ognuna con il suo scopo.
-Su [Facebook][fb]{: id="fb" } si trova il mio lato più mondano mentre su [LinkedIn][li]{: id="li" } quello più professionale. Su [Twitter][tw]{: id="tw" } sono presenti brevi e raffinati telegrammi, su [Instagram][ig]{: id="ig" } istanti che hanno catturato la mia attenzione.
-Le mie incostanti ossesioni musicali sono documentate su [Last.fm][lf]{: id="lf" }, mentre [Steam][st]{: id="st" } tiene traccia delle innumerevoli esperienze videoludiche in cui mi immergo.
-I miei progetti musicali sono ospitati su [YouTube][yt]{: id="yt" } e [MuseScore][ms]{: id="ms" }, mentre [GitHub][gh]{: id="gh" } raccoglie le mie opere in codice.
+Su [Facebook][fb] si trova il mio lato più mondano mentre su [LinkedIn][li] quello più professionale. Su [Twitter][tw] sono presenti brevi e raffinati telegrammi, su [Instagram][ig] istanti che hanno catturato la mia attenzione.
+Le mie incostanti ossesioni musicali sono documentate su [Last.fm][lf], mentre [Steam][st] tiene traccia delle innumerevoli esperienze videoludiche in cui mi immergo.
+I miei progetti musicali sono ospitati su [YouTube][yt] e [MuseScore][ms], mentre [GitHub][gh] raccoglie le mie opere in codice.
 
 Infine mi sento di dare alcuni consigli, assolutamente non imperativi.
 

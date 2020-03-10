@@ -27,11 +27,40 @@ h1, h2, h3 {
     padding: 0;
 }
 
+h1, h2 {
+    display: none;
+}
+
 h3 {
     font-size: 1.6em;
 }
 
-.card{
+#menu {
+    width: 100%;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 3em;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#menu ul {
+    margin-bottom: -1px;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    color: #696969;
+}
+
+#menu ul li a:hover {
+    color: #262626;
+}
+
+.card {
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: 4em;
