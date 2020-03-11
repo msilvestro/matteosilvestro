@@ -1,44 +1,7 @@
 <?php
-include 'php/Parsedown.php';
+define('DEFAULT_PAGE', 'introduzione');
 
-$parsedown = new Parsedown();
-
-$pages = [
-    'Introduzione' => 'introduzione',
-    'Musica' => 'musica',
-    'Codice' => 'codice',
-    'Università' => 'universita'
-];
-
-$fn = fopen('pages/musica.md', 'r');
-
-$page_title = '';
-$cards = array();
-$current_card = NULL;
-$current_part = NULL;
-while (!feof($fn)) {
-    $line = fgets($fn);
-    if (substr($line, 0, 3) == '## ') {
-        $page_title = trim(substr($line, 3));
-    } elseif (substr($line, 0, 4) == '### ') {
-        $card_title = trim(substr($line, 4));
-        $cards[$card_title] = array(
-            'title' => $card_title,
-            'right_column' => '',
-            'left_column' => ''
-        );
-        $current_card = $card_title;
-        $current_part = 'right_column';
-    } elseif ($current_part) {
-        if ($current_part == 'right_column' && substr($line, 0, 3) == '---') {
-            $current_part = 'left_column';
-        } else {
-            $cards[$current_card][$current_part] .= $line;
-        }
-    }
-}
-
-fclose($fn);
+include 'php/Pagemaker.php';
 ?>
 <!DOCTYPE html>
 <html lang="it">
@@ -62,32 +25,36 @@ fclose($fn);
 
         <div id="layout">
 
+            <div id="title"><h1>La pagina di Matteo Silvestro</h1></div>
+
             <div id="menu">
                 <ul>
-                <?php foreach ($pages as $page_name => $page_link): ?>
-                    <?php if ($page_name == $page_title): ?>
-                    <li><?= $page_name ?></li>
-                    <?php else: ?>
-                    <li><a href="<?= $page_link ?>"><?= $page_name ?></a></li>
-                    <?php endif; ?>
-                <?php endforeach; ?>
+                    <?php foreach ($pages as $menu_page_title => $menu_page_id): ?>
+                        <?php if ($menu_page_title == $page_title): ?>
+                            <li><?= $menu_page_title ?></li>
+                        <?php else: ?>
+                            <li><a href="<?= $menu_page_id ?>"><?= $menu_page_title ?></a></li>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
                 </ul>
             </div>
 
             <h2><?= $page_title ?></h2>
 
             <?php foreach ($cards as $card): ?>
-            <div class="card" id="la-mia-persona">
+            <div class="card" id="<?= slugify($card['title']) ?>">
 
                 <div class="right column">
                     <div class="title"><h3><?= $card['title'] ?></h3></div>
                     <?= $parsedown->text($card['right_column']) ?>
                 </div>
                 <div class="left column">
-                    <?= $parsedown->text($card['left_column']) ?>
+                    <?= render_video_tags($parsedown->text($card['left_column'])) ?>
                 </div>
             </div>
             <?php endforeach; ?>
+
+            <div id="footer">Matteo Silvestro 2020 - Version <abbr title="teta">&theta;</abbr> - Stile <a href="cappuccino.css">Cappuccino</a></div>
 
         </div>
 

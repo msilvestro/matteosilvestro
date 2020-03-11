@@ -2,24 +2,25 @@
 
 ### La mia persona
 
-> Per le buone idee non serve tempo. Servono prima un sacco di pessime idee.
+> Per le ottime idee non serve tempo. Servono prima un sacco di pessime idee.  
+> —Ral Zarek
 
 Sono un errante con la testa fra le nuvole in cerca di strade non battute. La mia vita è un adagio sostenuto in la minore da suonare con uno <abbr title="Stylophone, Otamatone, Theremin, vanno tutti bene.">strano strumento</abbr>.
 
 Ricerco la bellezza nelle ordinate linee di un codice sorgente, nell'armonioso susseguirsi di note su un pentagramma e nella perfezione di una ricercata formula matematica.
 
 Le mie identità sono disseminate per la rete, ognuna con il suo scopo.
-Su [Facebook][fb] si trova il mio lato più mondano mentre su [LinkedIn][li] quello più professionale. Su [Twitter][tw] sono presenti brevi e raffinati telegrammi, su [Instagram][ig] istanti che hanno catturato la mia attenzione.
+Su [Facebook][fb] si trova il mio lato più mondano, su [LinkedIn][li] quello più professionale. Su [Twitter][tw] sono presenti brevi e raffinati telegrammi, su [Instagram][ig] istanti che hanno catturato la mia attenzione.
 Le mie incostanti ossesioni musicali sono documentate su [Last.fm][lf], mentre [Steam][st] tiene traccia delle innumerevoli esperienze videoludiche in cui mi immergo.
 I miei progetti musicali sono ospitati su [YouTube][yt] e [MuseScore][ms], mentre [GitHub][gh] raccoglie le mie opere in codice.
 
 Infine mi sento di dare alcuni consigli, assolutamente non imperativi.
 
-Guarda [The Good Place][the_good_place].
+Guarda [The Good Place][the_good_place]. <!-- TODO aggiungere piccola descrizione -->
 
-Gioca a [Journey][journey] e [Persona 5][persona_5].
+Gioca a [Journey][journey] e [Persona 5][persona_5]. <!-- TODO aggiungere piccola descrizione -->
 
-Leggi [Quiet: Il potere degli introversi in un mondo che non sa smettere di parlare][quiet].
+Leggi [Quiet: Il potere degli introversi in un mondo che non sa smettere di parlare][quiet]. <!-- TODO aggiungere piccola descrizione -->
 
 [fb]: https://www.facebook.com/msilvestro93
 [li]: https://www.linkedin.com/in/matteosilvestro/

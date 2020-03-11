@@ -1,0 +1,41 @@
+# deny access to directories - show 403 error page
+Options -Indexes
+
+# charset
+AddDefaultCharset UTF-8
+
+# remove final slashes from directories
+DirectorySlash Off
+
+# base directory
+RewriteBase /
+
+RewriteEngine On
+
+# redirect the old domain to the new one
+# (italian version, since the old website is known mainly to Italian persons)
+RewriteCond %{HTTP_HOST} matteosilvestro.altervista.org [NC]
+RewriteRule ^(.*)$ http://www.matteosilvestro.com/it/$1 [L,R=301]
+
+# allow webpages only in the dev directory
+RewriteCond %{REQUEST_URI} ^/dev/?(.*)$ [NC]
+RewriteRule ^(.*)$ $1 [L,QSA,NC]
+
+# do not allow index.php and related queries to be called directly
+RewriteCond %{THE_REQUEST} index\.php* [NC]
+RewriteRule ^ /%1? [R=302,L]
+
+# redirect the page it to it/ to avoid confusions
+RewriteCond %{REQUEST_URI} ^/it$
+RewriteRule (.*) it/ [R=301,L]
+
+# requested a page in Italian
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^it/(.*)$ index\.php?page=$1&lang=it [L,QSA,NC]
+
+# standard, page in English (default language)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index\.php?page=$1 [L,QSA,NC]
+
+ErrorDocument 404 /index\.php?page=404
+ErrorDocument 403 /index\.php?page=403

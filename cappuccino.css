@@ -3,12 +3,18 @@ Cappuccino CSS Style - Valid CSS3
 by Matteo Silvestro
 CC BY 4.0
 http://creativecommons.org/licenses/by/4.0/
-last update: 10/03/2020
+last update: 11/03/2020
 --*/
+
+/* -- Page-wise stylings -- */
 
 * {
     box-sizing: border-box; /* account for any border and padding in the values
                             you specify for an element's width and height */
+}
+
+html {
+    margin-left: calc(100vw - 100%); /* avoid scrollbar jumps */
 }
 
 body {
@@ -27,18 +33,61 @@ h1, h2, h3 {
     padding: 0;
 }
 
-h1, h2 {
-    display: none;
+a {
+    text-decoration: none;
+    color: #eeeeee;
+    border-bottom: 1px solid #eeeeee;
 }
 
-h3 {
-    font-size: 1.6em;
+a:hover {
+    color: #262626;
+    background-color: #eeeeee;
+}
+
+abbr {
+    text-decoration: none;
+    color: #eeeeee;
+    border-bottom: 1px dotted #eeeeee;
+    cursor: help;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+blockquote {
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+    border-left: 1px solid #eeeeee;
+}
+
+blockquote p {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+/* -- Title and menu -- */
+
+h1 { /* website title */
+    display: none;
+    font-size: 2em;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 
 #menu {
     width: 100%;
     border-bottom: 1px solid #eeeeee;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     font-size: 2em;
     text-transform: uppercase;
     text-align: center;
@@ -60,6 +109,12 @@ h3 {
     color: #262626;
 }
 
+h2 { /* page title */
+    display: none;
+}
+
+/* -- Card contents -- */
+
 .card {
     display: flex;
     flex-direction: row-reverse;
@@ -71,77 +126,58 @@ h3 {
     margin-bottom: 1em;
 }
 
-.column.left {
+.title h3 {
+    font-size: 1.6em;
+}
+
+.left.column {
     flex: 2;
     text-align: right;
     padding-right: 20px;
     padding-top: 4em;
 }
 
-.column.left img {
+.left.column img {
     width: 100%;
     border: 1px solid #eeeeee;
 }
 
-.column.right {
+.right.column {
     flex: 3;
     padding-left: 20px;
 }
 
-a {
-    text-decoration: none;
-    color: #eeeeee;
-    border-bottom: 1px solid #eeeeee;
-}
-
-a:hover {
-    color: #262626;
-    background-color: #eeeeee;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.column.right ul {
+.right.column ul {
     padding-left: 1em;
 }
 
-.column.right ul li::before {
-    content: "⁎";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
+/* Use stars as bullet points, as I usually do on paper -- that's because I am
+   bothered by little circles. */
+.right.column ul li::before {
+    content: "⁎";
+    font-weight: bold; 
+    display: inline-block; /* needed to add space between the bullet and the text */
+    width: 1em;
+    margin-left: -1em;
 }
 
-blockquote {
-    margin: 0;
-    margin-bottom: 1em;
-    padding: 0.5em 1em;
-    border-left: 1px solid #eeeeee;
-}
-
-blockquote p {
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
-}
-
-p {
-    margin: 0;
-    margin-bottom: 1em;
-}
-
+/* Capitalize the first letter of a paragraph, so that it looks cool. */
 .column.right p:first-of-type::first-letter {
-    font-size: 3.3em;
+    font-size: 3.1em;
     float: left;
     margin-right: .08em;
+    margin-top: -0.25em;
 }
 
-.videothumbnail {
+@-moz-document url-prefix() { /* hack for Firefox */
+    /* In Firefox the letter is already at the right height, the other browsers
+       instead place it much lower */
+    .column.right p:first-of-type::first-letter {
+        margin-top: 0.01em;
+    }
+}
+
+.video-thumbnail { /* video preview of YouTube videos */
     position: relative;
     text-align: center;
     cursor: pointer;
@@ -149,12 +185,12 @@ p {
     margin-bottom: 1em;
 }
 
-.videothumbnail:hover div {
+.video-thumbnail:hover div {
     color: #262626;
     background-color: #eeeeee;
 }
 
-.videothumbnail div {
+.video-thumbnail div {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -166,7 +202,7 @@ p {
     background-color: #262626;
 }
 
-.videowrapper {
+.video-wrapper { /* actual YouTube video */
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
@@ -174,16 +210,40 @@ p {
     margin-bottom: 1em;
 }
 
-.videowrapper iframe {
+.video-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    border: 1px solid #eeeeee;
 }
 
-abbr {
-    text-decoration: none;
-    border-bottom: 1px dotted #eeeeee;
-    cursor: help;
+/* -- Footer -- */
+
+#footer {
+    width: 100%;
+    padding: 1em;
+    color: #696969;
+    text-align: center;
+    border-top: 1px solid #eeeeee;
+}
+
+/* -- Mobile phones fixes -- */
+
+@media (max-width: 600px) {
+
+    .card {
+        flex-direction: column; /* display columns one above the other */
+        padding: 0;
+    }
+
+    .column.right {
+        margin-bottom: 1em;
+    }
+
+    .column.left {
+        padding-top: 0;
+    }
+
 }
