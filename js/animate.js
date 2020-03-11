@@ -11,7 +11,6 @@ $( document ).ready(function() {
         'GitHub': '#24292e'
     }
     $('#la-mia-persona .column.right a').each(function() {
-        console.log($(this).html())
         if (Object.keys(identities).includes($(this).html())) {
             $(this).hover(
                 function() {
@@ -23,6 +22,7 @@ $( document ).ready(function() {
         }
     })
 })
+
 
 function openVideo(thisdiv, videoId) {
     // window.open('https://www.youtube.com/watch?v='+videoId, '_blank')

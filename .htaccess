@@ -25,15 +25,15 @@ RewriteRule ^(.*)$ $1 [L,QSA,NC]
 RewriteCond %{THE_REQUEST} index\.php* [NC]
 RewriteRule ^ /%1? [R=302,L]
 
-# redirect the page it to it/ to avoid confusions
-RewriteCond %{REQUEST_URI} ^/it$
-RewriteRule (.*) it/ [R=301,L]
+# add / to a language request (e.g. 'it' -> 'it/')
+RewriteCond %{REQUEST_URI} ^/[a-z]{2}$
+RewriteRule (.*) $1/ [R=301,L]
 
-# requested a page in Italian
+# requested a page in other language
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^it/(.*)$ index\.php?page=$1&lang=it [L,QSA,NC]
+RewriteRule ^([a-z]{2})/(.*)$ index\.php?page=$2&lang=$1 [L,QSA,NC]
 
-# standard, page in English (default language)
+# standard, page in default language
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index\.php?page=$1 [L,QSA,NC]
 

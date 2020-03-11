@@ -18,14 +18,8 @@ html {
 }
 
 body {
+    font-family: 'Bookman Old Style', Georgia, serif;
     background-color: #262626;
-}
-
-#layout {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-    color: #eeeeee;
 }
 
 h1, h2, h3 {
@@ -75,30 +69,42 @@ p {
     margin-bottom: 1em;
 }
 
+#layout {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #eeeeee;
+}
+
 /* -- Title and menu -- */
 
-h1 { /* website title */
-    display: none;
+#title {
+    width: 100%;
+    margin-bottom: 3em;
+    border-bottom: 1px solid #eeeeee;
+    text-align: center;
+}
+
+#title h1 { /* website title */
     font-size: 2em;
     font-weight: normal;
     text-transform: uppercase;
 }
 
+span.dim {
+    color: #696969;
+}
+
 #menu {
     width: 100%;
-    border-bottom: 1px solid #eeeeee;
-    margin-bottom: 2em;
-    font-size: 2em;
+    margin-bottom: 4em;
     text-transform: uppercase;
     text-align: center;
 }
 
-#menu ul {
-    margin-bottom: -1px;
-}
-
 #menu ul li {
     display: inline;
+    font-size: 2em;
 }
 
 #menu ul li a {
@@ -162,7 +168,7 @@ h2 { /* page title */
 }
 
 /* Capitalize the first letter of a paragraph, so that it looks cool. */
-.column.right p:first-of-type::first-letter {
+.right.column p:first-of-type::first-letter {
     font-size: 3.1em;
     float: left;
     margin-right: .08em;
@@ -223,7 +229,7 @@ h2 { /* page title */
 
 #footer {
     width: 100%;
-    padding: 1em;
+    padding: 0.5em;
     color: #696969;
     text-align: center;
     border-top: 1px solid #eeeeee;
