@@ -1,8 +1,9 @@
 ## Musica
 
-### Tu Scendi Dalle Stelle
+La mia pagina della musica!
 
-<!--28 dic 2019-->
+### Tu Scendi Dalle Stelle
+@ 28 dic 2019
 
 Un solitario Game Boy Color canta una versione a cappella di "Tu Scendi Dalle Stelle".
 
@@ -33,8 +34,7 @@ l'avermi amato!»
 
 
 ### Trilobyte (Rogue Legacy)
-
-<!--24 ago 2017-->
+@ 24 ago 2017
 
 Ero a casa di un amico e l'ascolto di questo brano, *Trilobyte*, catturò subito la mia attenzione, facendomi infatuare. Dopo aver dedicato diverse ore a *Rogue Legacy*, il videogioco da cui è tratta, questo sentimento non ha fatto altro che rafforzarsi.
 
@@ -60,8 +60,7 @@ Il soundfont scelto è ispirato ai suoni del Roland MT-32, che avevo già apprez
 
 
 ### Sigla di Doctor Who
-
-<!--12 giu 2016-->
+@ 12 giu 2016
 
 La sigla di *Doctor Who*, composta nel 1963 da Ron Grainer, realizzata da Delia Derbyshire e dal BBC Radiophonic Workshop. La cover è stata creata con il Korg DSN-12 su un Nintendo 3DS XL.
 
@@ -77,8 +76,7 @@ La sigla di *Doctor Who*, composta nel 1963 da Ron Grainer, realizzata da Delia 
 
 
 ### Reconstructing More Science
-
-<!--5 feb 2012-->
+@ 5 feb 2012
 
 La mia versione di *Reconstructing More Science*, tratta dalla colonna sonora di *Portal 2*, al pianoforte.
 
@@ -100,8 +98,7 @@ L'adattamento è basato su quello di [Taioo][taioo], a cui ho aggiunto la parte 
 
 
 ### Inno d'Italia
-
-<!--17 mar 2011-->
+@ 17 mar 2011
 
 L'*Inno d'Italia* suonato interamente con lo *Stylophone*, il piccolo organo elettronico.
 

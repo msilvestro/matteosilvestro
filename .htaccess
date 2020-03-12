@@ -12,28 +12,28 @@ RewriteBase /
 
 RewriteEngine On
 
-# redirect the old domain to the new one
-# (italian version, since the old website is known mainly to Italian persons)
+# Redirect the old domain to the new one.
+# (Italian version, since the old website is known mainly to Italian people.)
 RewriteCond %{HTTP_HOST} matteosilvestro.altervista.org [NC]
 RewriteRule ^(.*)$ http://www.matteosilvestro.com/it/$1 [L,R=301]
 
-# allow webpages only in the dev directory
+# Totally free access in the /dev directory.
 RewriteCond %{REQUEST_URI} ^/dev/?(.*)$ [NC]
 RewriteRule ^(.*)$ $1 [L,QSA,NC]
 
-# do not allow index.php and related queries to be called directly
+# Do not allow index.php and related queries to be called directly.
 RewriteCond %{THE_REQUEST} index\.php* [NC]
 RewriteRule ^ /%1? [R=302,L]
 
-# add / to a language request (e.g. 'it' -> 'it/')
+# Add / to a language request (e.g. 'it' -> 'it/').
 RewriteCond %{REQUEST_URI} ^/[a-z]{2}$
 RewriteRule (.*) $1/ [R=301,L]
 
-# requested a page in other language
+# The user has specified a specific language to use ('it', 'de', 'fr', ...)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([a-z]{2})/(.*)$ index\.php?page=$2&lang=$1 [L,QSA,NC]
 
-# standard, page in default language
+# No language specified, page in default language.
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index\.php?page=$1 [L,QSA,NC]
 

@@ -1,9 +1,9 @@
 <?php
 include 'php/Pagemaker.php';
 
-define('DEFAULT_PAGE', 'introduction');
+define('DEFAULT_PAGE_ID', 'introduction');
 define('DEFAULT_LANGUAGE', 'en');
-define('OTHER_LANGUAGE', 'it');
+define('SECOND_LANGUAGE', 'it');
 
 $pages = array(
     'en' => array(
@@ -20,15 +20,15 @@ $pages = array(
     )
 );
 
-list($page_title, $page_lang, $cards) = get_cards($pages);
+list($page_lang, $page_title, $page_description, $cards) = get_page_data($pages);
 ?>
 <!DOCTYPE html>
-<html lang="it">
+<html lang="<?= $page_lang ?>">
 
     <head>
 
         <meta charset="UTF-8">
-        <meta name="description" content="Descrizione">
+        <meta name="description" content="<?= $page_description ?>">
         <meta name="author" content="Matteo Silvestro">
         <meta name="generator" content="Visual Studio Code 1.42.1">
 
@@ -59,10 +59,10 @@ list($page_title, $page_lang, $cards) = get_cards($pages);
                     <?php foreach ($pages[$page_lang] as $menu_page_id => $menu_page_title): ?>
                         <?php if ($menu_page_title == $page_title): ?>
                             <li><?= $menu_page_title ?></li>
-                        <?php elseif ($menu_page_title == $pages[$page_lang][DEFAULT_PAGE]): ?>
-                            <li><a href="<?= get_prefix($page_lang) ?>"><?= $menu_page_title ?></a></li>
+                        <?php elseif ($menu_page_title == $pages[$page_lang][DEFAULT_PAGE_ID]): ?>
+                            <li><a href="<?= get_lang_prefix($page_lang) ?>"><?= $menu_page_title ?></a></li>
                         <?php else: ?>
-                            <li><a href="<?= get_prefix($page_lang).slugify($menu_page_title) ?>"><?= $menu_page_title ?></a></li>
+                            <li><a href="<?= get_lang_prefix($page_lang).slugify($menu_page_title) ?>"><?= $menu_page_title ?></a></li>
                         <?php endif; ?>
                     <?php endforeach; ?>
                 </ul>
@@ -74,7 +74,12 @@ list($page_title, $page_lang, $cards) = get_cards($pages);
             <div class="card" id="<?= slugify($card['title']) ?>">
 
                 <div class="right column">
-                    <div class="title"><h3><?= $card['title'] ?></h3></div>
+                    <div class="title">
+                        <h3><?= $card['title'] ?></h3>
+                        <?php if (isset($card['date'])): ?>
+                        <span class="dim"><?= $card['date'] ?></span>
+                        <?php endif; ?>
+                    </div>
                     <?= $parsedown->text($card['right_column']) ?>
                 </div>
                 <div class="left column">
@@ -84,9 +89,9 @@ list($page_title, $page_lang, $cards) = get_cards($pages);
             <?php endforeach; ?>
 
             <?php if ($page_lang == "en"): ?>
-                <div id="footer">Matteo Silvestro 2020 - Versione <abbr title="theta">&theta;</abbr> - Stile <a href="cappuccino.css">Cappuccino</a> - Sorgente <a href="<?= get_markdown_source($page_title, $page_lang) ?>">Markdown</a> - <a href="<?= get_translation($pages, $page_title, $page_lang) ?>">English</a> version</div>
+                <div id="footer">Matteo Silvestro 2020 — Version <abbr title="theta">&theta;</abbr> — <a href="cappuccino.css">Cappuccino</a> style — <a href="<?= get_markdown_source($page_title, $page_lang) ?>">Markdown</a> source — Versione <a href="<?= get_translated_page($pages, $page_title, $page_lang) ?>">italiana</a></div>
             <?php else: ?>
-                <div id="footer">Matteo Silvestro 2020 - Version <abbr title="theta">&theta;</abbr> - <a href="cappuccino.css">Cappuccino</a> style - <a href="<?= get_markdown_source($page_title, $page_lang) ?>">Markdown</a> source - Versione <a href="<?= get_translation($pages, $page_title, $page_lang) ?>">italiana</a></div>
+                <div id="footer">Matteo Silvestro 2020 — Versione <abbr title="theta">&theta;</abbr> — Stile <a href="cappuccino.css">Cappuccino</a> — Sorgente <a href="<?= get_markdown_source($page_title, $page_lang) ?>">Markdown</a> — <a href="<?= get_translated_page($pages, $page_title, $page_lang) ?>">English</a> version</div>
             <?php endif; ?>
 
         </div>
