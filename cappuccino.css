@@ -186,6 +186,10 @@ h2 { /* page title */
     }
 }
 
+.right.column p:last-of-type {
+    margin-bottom: 0; /* for better spacing remove last paragraph margin */
+}
+
 .video-thumbnail { /* video preview of YouTube videos */
     position: relative;
     text-align: center;

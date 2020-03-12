@@ -1,6 +1,7 @@
 ## Musica
 
-Sono Matteo Silvestro, un errante con la testa fra le nuvole in cerca di strade non battute. Qui trovate una raccolta dei miei progetti musicali, perlopiù cover.
+Sono Matteo Silvestro, un errante con la testa fra le nuvole in cerca di strade non battute. Qui è presente raccolta dei miei progetti musicali, perlopiù cover.
+
 
 ### Tu scendi dalle stelle
 @ 28 dic 2019

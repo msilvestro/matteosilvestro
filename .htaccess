@@ -17,6 +17,10 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} matteosilvestro.altervista.org [NC]
 RewriteRule ^(.*)$ http://www.matteosilvestro.com/it/$1 [L,R=301]
 
+# Fix for Bachelor's thesis and essay links.
+Redirect /it/files/tesi/ /files/uni/tri/
+Redirect /it/files/sds/ /files/uni/sds/
+
 # Totally free access in the /dev directory.
 RewriteCond %{REQUEST_URI} ^/dev/?(.*)$ [NC]
 RewriteRule ^(.*)$ $1 [L,QSA,NC]
