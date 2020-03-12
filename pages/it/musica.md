@@ -1,24 +1,28 @@
 ## Musica
 
-La mia pagina della musica!
+Sono Matteo Silvestro, un errante con la testa fra le nuvole in cerca di strade non battute. Qui trovate una raccolta dei miei progetti musicali, perlopiù cover.
 
-### Tu Scendi Dalle Stelle
+### Tu scendi dalle stelle
 @ 28 dic 2019
 
-Un solitario Game Boy Color canta una versione a cappella di "Tu Scendi Dalle Stelle".
+Avendo cominciato da poco un corso di coro e visto il periodo, avrei voluto registrare una versione a cappella di un canto natalizio. Tuttavia l'impresa si è rivelata più ardua del previsto e alla fine ho deciso di affidare il compito al mio Game Boy Color, che avevo recentemente adattato a scopi musicali grazie alla cartuccia [Nanoloop One][nlo].
 
-Questo è il testo del primo verso per accompagnare il video:
+La scelta del brano invece è ricaduta su "Tu scendi dalle stelle" perché è un canto natalizio di origini totalmente italiane, oltre ad essere un personale favorito.
+
+Questo è il testo del primo verso cantato dal Game Boy Color nel video:
 
 «Tu scendi dalle stelle,  
 o Re del Cielo,  
 e vieni in una grotta  
-al freddo, al gelo.  
+al freddo, al gelo.
 
 O Bambino mio Divino,  
 io ti vedo qui a tremar,  
 o Dio beato,  
 e quanto ti costò  
 l'avermi amato!»
+
+[nlo]: https://nanoloop.com/one/index.html
 
 ---
 
@@ -38,9 +42,9 @@ l'avermi amato!»
 
 Ero a casa di un amico e l'ascolto di questo brano, *Trilobyte*, catturò subito la mia attenzione, facendomi infatuare. Dopo aver dedicato diverse ore a *Rogue Legacy*, il videogioco da cui è tratta, questo sentimento non ha fatto altro che rafforzarsi.
 
-Sono piuttosto orgoglioso di questa trascrizione perché è stata la prima che ho completato in totale autonomia. Solitamente trovo già degli adattamenti o parte di essi da cui partire, mentre questa volta ho dovuto cominciare completamente da zero e affidarmi unicamente al mio orecchio.
+Sono piuttosto orgoglioso di questa trascrizione perché è stata la prima che ho completato in totale autonomia. Solitamente trovo degli adattamenti già fatti o parte di essi da cui partire, mentre questa volta ho dovuto cominciare completamente da zero e affidarmi unicamente al mio orecchio.
 
-Il soundfont scelto è ispirato ai suoni del Roland MT-32, che avevo già apprezzato nella colonna sonora di Monkey Island 2.
+Il soundfont scelto è ispirato ai suoni del Roland MT-32, che avevo già apprezzato nella colonna sonora di *Monkey Island 2*.
 
 ---
 
@@ -62,7 +66,13 @@ Il soundfont scelto è ispirato ai suoni del Roland MT-32, che avevo già apprez
 ### Sigla di Doctor Who
 @ 12 giu 2016
 
-La sigla di *Doctor Who*, composta nel 1963 da Ron Grainer, realizzata da Delia Derbyshire e dal BBC Radiophonic Workshop. La cover è stata creata con il Korg DSN-12 su un Nintendo 3DS XL.
+
+Doctor Who è una di quelle serie che rapisce e commuove: se i viaggi nel tempo e nello spazio portano in tutto l'universo, in realtà sono spesso solo un pretesto per esplorare in modo vivido la bellezza e le contraddizioni dell'animo umano. Allo stesso modo rimane impressa l'[iconica sigla][dt], composta nel 1963 da Ron Grainer e realizzata da Delia Derbyshire. Fu un pezzo di musica elettronica decisamente all'avanguardia per l'epoca, in cui mancava la strumentazione professionale che abbiamo adesso.
+
+Ripercorrendo questa strada, mi sono messo all'opera con il [Korg DSN-12][dsn12], un sintetizzatore analogico per il Nintendo 3DS. Non mi ero mai cimentato nella sintesi musicale e tentare di ricreare la sigla originale è stata un'esperienza divertente e interessante.
+
+ [dt]: https://www.youtube.com/watch?v=xkIEkLww3lg
+ [dsn12]: https://www.korg.com/it/products/synthesizers/korg_dsn12/
 
 ---
 
@@ -78,9 +88,10 @@ La sigla di *Doctor Who*, composta nel 1963 da Ron Grainer, realizzata da Delia 
 ### Reconstructing More Science
 @ 5 feb 2012
 
-La mia versione di *Reconstructing More Science*, tratta dalla colonna sonora di *Portal 2*, al pianoforte.
+Il gioco che mi ha trasformato da giocatore occasionale ad appassionato fruitore di esperienze videoludiche è stato *Portal*. Le meccaniche e la storia sono magistrali, ancor di più nel seguito. Proprio da *Portal 2* è tratto *Reconstructing More Science*, a mio avviso il pezzo più bello della stupenda colonna sonora.
 
-L'adattamento è basato su quello di [Taioo][taioo], a cui ho aggiunto la parte centrale che mancava. In questo modo la cover è completa e riprende tutte le parti del brano originale.
+Dopo una breve ricerca trovai l'ottimo adattamento di [Taioo][taioo], che però era basato sulla versione del trailer e mancava del bellissimo pezzo centrale. Mi misi subito all'opera e riuscii a completarlo, creando un arrangiamento che rende molto bene al pianoforte.
+ Ancora oggi è il mio pezzo distintivo che non mi stanco mai di suonare.
 
 [taioo]: https://www.youtube.com/watch?v=ElGJUXZdCd0
 
@@ -100,9 +111,9 @@ L'adattamento è basato su quello di [Taioo][taioo], a cui ho aggiunto la parte 
 ### Inno d'Italia
 @ 17 mar 2011
 
-L'*Inno d'Italia* suonato interamente con lo *Stylophone*, il piccolo organo elettronico.
+Questo è stato il mio primo video ed ha un valore nostalgico per me. In quel periodo ero affascianto dallo Stylophone, il piccolo organo elettronico.
 
-È stato il mio primo video ed ha un valore nostalgico per me. All'epoca ero molto preso da questo strumento bizzarro, lo Stylophone, e mi si presentò l'occasione di sfruttarlo quando si festeggiarono i 150 anni dell'Unità d'Italia, avvenuta il 17 marzo 1861. Quale miglior modo per celebrare se non creando una cover dell'Inno d'Italia?
+Mi si presentò l'occasione di metterlo alla prova quando erano in preparazione i festeggiamenti per i 150 anni dell'Unità d'Italia, avvenuta il 17 marzo 1861. Mi misi all'opera, adattando l'*Inno d'Italia* alla piccola tastiera dello Stylophone e creando un montaggio che richiamasse la bandiera italiana.
 
 ---
 
