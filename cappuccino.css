@@ -109,6 +109,7 @@ span.dim {
 
 #menu ul li a {
     color: #696969;
+    border-bottom: 1px solid #696969;
 }
 
 #menu ul li a:hover {

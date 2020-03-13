@@ -1,4 +1,12 @@
 $( document ).ready(function() {
+    if ($('#la-mia-identita').length) {
+        var myPersona = '#la-mia-identita' // Italian introduction page
+    } else if ($('#my-persona').length) {
+        var myPersona = '#my-persona' // English introduction page
+    } else {
+        return // other pages, skip it all
+    }
+
     var identities = {
         'Facebook': '#3b5998',
         'LinkedIn': '#0077b5',
@@ -10,14 +18,14 @@ $( document ).ready(function() {
         'MuseScore': '#1f74bd',
         'GitHub': '#24292e'
     }
-    $('#la-mia-persona .column.right a').each(function() {
+    $(myPersona+' .column.right a').each(function() {
         if (Object.keys(identities).includes($(this).html())) {
             $(this).hover(
                 function() {
-                    $('#la-mia-persona img').css('background-color', identities[$(this).html()])
+                    $(myPersona+' img').css('background-color', identities[$(this).html()])
                 },
                 function() {
-                    $('#la-mia-persona img').css('background-color', '')
+                    $(myPersona+' img').css('background-color', '')
                 })
         }
     })

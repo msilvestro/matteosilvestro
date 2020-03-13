@@ -1,9 +1,9 @@
 ## Introduzione
 
-Sono Matteo Silvestro, un errante con la testa fra le nuvole in cerca di strade non battute. Questa è la mia pagina personale, in cui metto in mostra me stesso e le mie opere.
+Sono Matteo Silvestro, un errante con la testa fra le nuvole in cerca di strade non battute. Questa è la mia pagina personale, in cui esprimo me stesso e condivido le mie opere.
 
 
-### La mia persona
+### La mia identità
 
 > Per le ottime idee non serve tempo. Servono prima un sacco di pessime idee.  
 > —Ral Zarek
@@ -21,7 +21,7 @@ Infine ecco alcuni consigli, assolutamente non imperativi.
 
 Guarda [The Good Place][the_good_place]. Una serie TV adatta a tutti che, tra dilemmi filosofici e momenti di ilarità, fa piangere e ridere di cuore.
 
-Gioca a [Journey][journey] e [Persona 5][persona_5]. Il primo videogioco è un breve ma emozionante viaggio in compagnia di altri viandanti tra paesaggi mozzafiato. Il secondo è un improbabile gioco di ruolo, un capolavoro di stile con storia e tematiche attuali e intriganti.
+Gioca a [Journey][journey] e [Persona 5][persona_5]. Il primo videogioco è un breve ma emozionante viaggio in compagnia di altri viandanti tra paesaggi mozzafiato. Il secondo è un improbabile gioco di ruolo, un capolavoro di stile con una storia coinvolgente e tematiche attuali.
 
 Leggi [Quiet: Il potere degli introversi in un mondo che non sa smettere di parlare][quiet]. Un libro rivelatore sulla natura degli introversi, i cui punti forza sono spesso svalutati.
 
@@ -47,6 +47,6 @@ Leggi [Quiet: Il potere degli introversi in un mondo che non sa smettere di parl
 * [Il mio curriculum vitae](/files/cv/cv_it.pdf)
 * [Le note di Matteo Silvestro (blog personale)](https://msilvestro.tumblr.com/)
 * [Invia un tweet a @msilvestro](https://twitter.com/intent/tweet?screen_name=msilvestro)
-* [Scrivi una mail](mailto:matteosilvestro@altervista.org)
+* [Scrivimi una mail](mailto:matteosilvestro@altervista.org)
 
 [avatar]: /img/persona_matt.png
