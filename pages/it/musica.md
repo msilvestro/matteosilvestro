@@ -6,7 +6,7 @@ Sono Matteo Silvestro, un errante con la testa fra le nuvole in cerca di strade 
 ### Tu scendi dalle stelle
 @ 28 dicembre 2019
 
-Avendo cominciato da poco un corso di coro e visto il periodo dell'anno, avrei voluto registrare una versione a cappella di un canto natalizio. Tuttavia l'impresa si è rivelata più ardua del previsto e alla fine ho deciso di affidare il compito al mio Game Boy Color, che avevo recentemente adattato a scopi musicali grazie alla cartuccia [Nanoloop One][nlo].
+Avendo cominciato da poco un corso di coro e visto il periodo dell'anno, avrei voluto registrare una versione a cappella di un canto natalizio con la mia famiglia. Tuttavia, l'impresa si è rivelata più ardua del previsto e alla fine ho deciso di affidare il compito al mio Game Boy Color, che avevo recentemente riadattato a scopi musicali grazie alla cartuccia [Nanoloop One][nlo].
 
 La scelta del brano è ricaduta su *Tu scendi dalle stelle* perché è un tradizionale canto natalizio di origini italiane, oltre ad essere un personale favorito.
 
@@ -41,7 +41,7 @@ l'avermi amato!»
 ### Trilobyte (Rogue Legacy)
 @ 24 agosto 2017
 
-Ero a casa di un amico e l'ascolto di questo brano, *Trilobyte*, catturò subito la mia attenzione, facendomi infatuare. Dopo aver dedicato diverse ore a *Rogue Legacy*, il videogioco da cui è tratta, questo sentimento non ha fatto altro che rafforzarsi.
+Ero a casa di un amico e l'ascolto di questo brano, *Trilobyte*, catturò subito la mia attenzione, facendomi infatuare. Dopo aver dedicato diverse ore a *Rogue Legacy*, il videogioco da cui è tratto, questo sentimento non ha fatto altro che rafforzarsi.
 
 Sono piuttosto orgoglioso di questa trascrizione perché è stata la prima che ho completato in totale autonomia. Solitamente trovo degli adattamenti già fatti o parte di essi da cui partire, mentre questa volta ho dovuto cominciare completamente da zero e affidarmi unicamente al mio orecchio.
 
@@ -68,9 +68,9 @@ Il soundfont scelto è ispirato ai suoni del Roland MT-32, che avevo già apprez
 @ 12 giugno 2016
 
 
-*Doctor Who* è una di quelle serie che rapisce e commuove: se i viaggi nel tempo e nello spazio portano in tutto l'universo, in realtà sono spesso solo un pretesto per esplorare in modo vivido la bellezza e le contraddizioni dell'animo umano. Allo stesso modo rimane impressa l'[iconica sigla][dt], composta nel 1963 da Ron Grainer e realizzata da Delia Derbyshire. Fu un pezzo di musica elettronica decisamente all'avanguardia per l'epoca, in cui mancava la strumentazione professionale che abbiamo adesso.
+*Doctor Who* è una di quelle serie che rapisce e commuove: se i viaggi nel tempo e nello spazio portano in tutto l'universo, in realtà sono spesso solo un pretesto per esplorare la bellezza e le contraddizioni dell'animo umano. Allo stesso modo rimane impressa l'[iconica sigla][dt], composta nel 1963 da Ron Grainer e realizzata da Delia Derbyshire. Fu un pezzo di musica elettronica decisamente all'avanguardia per l'epoca, in cui mancava la strumentazione professionale che abbiamo adesso.
 
-Ripercorrendo questa strada, mi sono messo all'opera con il [Korg DSN-12][dsn12], un sintetizzatore analogico per il Nintendo 3DS. Non mi ero mai cimentato nella sintesi musicale e tentare di ricreare la sigla originale è stata un'esperienza divertente e interessante.
+Ripercorrendo la loro strada, mi sono messo all'opera con il [Korg DSN-12][dsn12], un sintetizzatore analogico per il Nintendo 3DS. Non mi ero mai cimentato nella sintesi musicale e tentare di ricreare la sigla originale è stata un'esperienza divertente e interessante.
 
  [dt]: https://www.youtube.com/watch?v=xkIEkLww3lg
  [dsn12]: https://www.korg.com/it/products/synthesizers/korg_dsn12/
@@ -91,7 +91,7 @@ Ripercorrendo questa strada, mi sono messo all'opera con il [Korg DSN-12][dsn12]
 
 Il gioco che mi ha trasformato da giocatore occasionale ad appassionato fruitore di esperienze videoludiche è stato *Portal*. Le meccaniche e la storia sono magistrali, ancor di più nel seguito. Proprio da *Portal 2* è tratto *Reconstructing More Science*, a mio avviso il pezzo più bello della stupenda colonna sonora.
 
-Dopo una breve ricerca trovai l'ottimo adattamento di [Taioo][taioo], che però era basato sulla versione del trailer e mancava del bellissimo pezzo centrale. Cominciai subito a lavorarci e riuscii a completarlo, creando un arrangiamento che rende molto bene al pianoforte.
+Dopo una breve ricerca trovai l'ottimo adattamento di [Taioo][taioo], che però era basato sulla versione del trailer ed era privo del bellissimo pezzo centrale. Cominciai subito a lavorarci e riuscii a completarlo, creando un arrangiamento che rende molto bene al pianoforte.
  Ancora oggi è il mio pezzo distintivo che non mi stanco mai di suonare.
 
 [taioo]: https://www.youtube.com/watch?v=ElGJUXZdCd0

@@ -13,7 +13,7 @@ La tesi, dal titolo **Computer-Assisted Evaluation of Story-Driven Interactive S
 
 La valutazione della narrazione che risulta da un sistema di storytelling non è un compito semplice, nemmeno nel caso di sistemi lineari. Per una storia interattiva, lo spazio dei possibili sviluppi può crescere molto velocemente e diventare difficile da gestire. Il creatore della storia non ha a sua disposizione pressoché alcun aiuto in questo processo.
 
-Viene proposta, partendo da altri articoli, una metodologia generale per valutare i sistemi di storia interattiva basati sulla storia utilizzando clustering, estrazione di curve di tensione e sondaggi. Questa procedura restituisce un insieme di cluster, ognuno con la sua propria curva di tensione e il suo proprio punteggio qualitativo medio. Il creatore della storia può ispezionare il clustering ottenuto e iterare sul suo sistema di storytelling alla luce delle nuove conoscenze acquisite. Ciò potrebbe portare anche a un'associazione tra la forma della curva di tensiona e la qualità di una storia.
+Viene proposta, partendo da articoli precedenti, una metodologia generale per valutare i sistemi di storytelling interattivi basati sulla storia utilizzando clustering, estrazione di curve di tensione e sondaggi. Questa procedura restituisce un insieme di cluster, ognuno con la sua curva di tensione e il suo punteggio qualitativo medio. Il creatore della storia può ispezionare il clustering ottenuto e iterare sul suo sistema di storytelling alla luce delle nuove conoscenze acquisite. Ciò potrebbe portare anche a un'associazione tra la forma della curva di tensiona e la qualità di una storia.
 
 Questa metodologia viene applicata a un sistema di storytelling interattivo basato sulla storia per mostrare i suoi conseguimenti attuali e potenziali, rispettivamente. I risultati indicano che i cluster, anche se non ben formati, mostrano punteggi qualitativi differenti e che alcune curve di tensione sono associate a storie migliori. Anche se il metodo si è dimostrato valido, c'è spazio per miglioramenti.
 
@@ -30,6 +30,7 @@ Questa metodologia viene applicata a un sistema di storytelling interattivo basa
 [tesi_sds]: /files/uni/sds/thesis.pdf
 [pres_sds]: /files/uni/sds/slides.pdf
 [dupin]: https://github.com/msilvestro/dupin
+
 
 ### Coupling from the past
 
@@ -56,13 +57,13 @@ Un algoritmo efficiente per ottenere questo risultato si chiama *coupling from t
 
 @ 10 ottobre 2015
 
-La tesi, dal titolo **MCTS e videogiochi: un'applicazione per le Gare Pokémon Live**, è stata un'esperienza diverte e sicuramente un po' azzardata, ma i risultati sono stati molto interessanti e positivi. Oltrettutto, riuscire a coniugare i miei allora amati Pokémon e la matematica è un'impresa di cui sono piuttosto fiero.
+La tesi, dal titolo **MCTS e videogiochi: un'applicazione per le Gare Pokémon Live**, è stata un'esperienza divertente e sicuramente un po' sconsiderata, ma i risultati si sono rivelati molto interessanti e incoraggianti. Oltrettutto, essere riuscito a coniugare i Pokémon e la matematica è un'impresa di cui sono piuttosto fiero.
 
 #### Sommario
 
-L'algoritmo MCTS è stato utilizzato con successo per giochi come Go, simulando molte partite in modo casuale e creando un albero di gioco. Può essere ulteriormente migliorato utilizzando l’UCT, un algoritmo di selezione delle mosse, trovando un compromesso tra esplorazione di nuove strategie e sfruttamento delle migliori.
+L'algoritmo MCTS è stato utilizzato con successo per giochi come il Go, simulando molte partite in modo casuale e creando un albero di gioco. Può essere ulteriormente migliorato utilizzando l’UCT, un algoritmo di selezione delle mosse, trovando un compromesso tra esplorazione di nuove strategie e sfruttamento delle migliori.
 
-In questa tesi viene spiegato il principio di funzionamento dell'algoritmo. Inoltre, si discute come possa essere applicato con successo anche ai videogiochi e se ne mostra un utilizzo pratico.
+In questa tesi viene spiegato il principio di funzionamento dell'algoritmo. Inoltre, si discute su come possa essere applicato con successo anche ai videogiochi e se ne mostra un utilizzo pratico.
 
 Il gioco scelto come applicazione sono le Gare Pokémon Live, in cui quattro giocatori si sfidano in una esibizione che dura cinque turni. Ogni turno i partecipanti eseguono una mossa per impressionare il pubblico o per infastidire gli avversari. Essendo un gioco a turni ma con scelta contemporanea delle mosse e elementi casuali, è utile per mostrare l'efficienza dell'MCTS anche al di fuori di giochi a turni sequenziali deterministici come il Go.
 

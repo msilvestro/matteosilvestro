@@ -60,7 +60,16 @@ class Pagemaker {
             $page_lang = DEFAULT_LANGUAGE;
         } else {
             $page_lang = $_GET['lang'];
-            if ($page_lang != SECOND_LANGUAGE) { # deny non-supported languages
+            # If the user request the default language page writing it
+            # explicitly in the URL, for consistency redirect back to the
+            # language prefix-less URL.
+            # e.g. 'ms.com/en/music' -> 'ms.com/music'
+            if ($page_lang == DEFAULT_LANGUAGE) {
+                header("Location: http://$_SERVER[HTTP_HOST]".
+                        substr($_SERVER['REQUEST_URI'], 3));
+                exit();
+            # Deny non-supported languages.
+            } elseif ($page_lang != SECOND_LANGUAGE) {
                 $page_lang = DEFAULT_LANGUAGE;
                 $language_not_supported = true;
             }

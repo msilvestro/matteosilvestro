@@ -21,7 +21,7 @@ Infine ecco alcuni consigli, assolutamente non imperativi.
 
 Guarda [The Good Place][the_good_place]. Una serie TV adatta a tutti che, tra dilemmi filosofici e momenti di ilarità, fa piangere e ridere di cuore.
 
-Gioca a [Journey][journey] e [Persona 5][persona_5]. Il primo videogioco è un breve ma emozionante viaggio in compagnia di altri viandanti tra paesaggi mozzafiato. Il secondo è un improbabile gioco di ruolo, un capolavoro di stile con una storia coinvolgente e tematiche attuali.
+Gioca a [Journey][journey] e [Persona 5][persona_5]. Il primo videogioco è un breve ma emozionante viaggio in compagnia di altri viandanti tra paesaggi mozzafiato. Il secondo è un improbabile gioco di ruolo, un capolavoro di stile con una storia coinvolgente su tematiche sempre attuali.
 
 Leggi [Quiet: Il potere degli introversi in un mondo che non sa smettere di parlare][quiet]. Un libro rivelatore sulla natura degli introversi, i cui punti forza sono spesso svalutati.
 

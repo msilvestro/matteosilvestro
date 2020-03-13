@@ -58,12 +58,6 @@ blockquote {
     border-left: 1px solid #eeeeee;
 }
 
-blockquote p {
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
-}
-
 p {
     margin: 0;
     margin-bottom: 1em;
@@ -168,7 +162,7 @@ h2 { /* page title */
     margin-left: -1em;
 }
 
-/* Capitalize the first letter of a paragraph, so that it looks cool. */
+/* Make bigger the first letter of a paragraph, so that it looks cool. */
 .right.column p:first-of-type::first-letter {
     font-size: 3.1em;
     float: left;
@@ -187,8 +181,15 @@ h2 { /* page title */
     }
 }
 
-.right.column p:last-of-type {
-    margin-bottom: 0; /* for better spacing remove last paragraph margin */
+/* Disable the first big letter for quotes. */
+.right.column blockquote p:first-of-type::first-letter {
+    font-size: 1em;
+    float: none;
+    margin: 0;
+}
+
+.right.column :last-child {
+    margin-bottom: 0; /* for better spacing remove last element margin */
 }
 
 .video-thumbnail { /* video preview of YouTube videos */
@@ -231,6 +232,11 @@ h2 { /* page title */
     width: 100%;
     height: 100%;
     border: 1px solid #eeeeee;
+}
+
+span.big {
+    color: #696969;
+    font-size: 6em;
 }
 
 /* -- Footer -- */

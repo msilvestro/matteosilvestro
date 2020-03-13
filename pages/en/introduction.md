@@ -13,14 +13,14 @@ I seek beauty in the tidy lines of a source code, in the harmonious flow of note
 
 My personae are scattered around the web, each with its own purpose.
 On [Facebook][fb] you can find my most frivolous side, on [LinkedIn][li] the most professional one. On [Twitter][tw] there are short and refined telegrams, on [Instagram][ig] moments that caught my attention.
-My volatile musical obsession are recorded on [Last.fm][lf], while [Steam][st] keeps tabs on the countless videogame experiences I dive in.
-My musical projects find place on [YouTube][yt] and [MuseScore][ms], while [GitHub][gh] collects my coding works.
+My volatile musical obsessions are recorded on [Last.fm][lf], while [Steam][st] keeps tabs on the countless videogame experiences I dive in.
+My musical projects are on [YouTube][yt] and [MuseScore][ms], while [GitHub][gh] collects my coding works.
 
 Finally, here are a few advices, absolutely nothing mandatory.
 
 Watch [The Good Place][the_good_place]. A TV series for everyone that, between philosophical dilemmas and hilarious moments, makes you cry and laugh heartily.
 
-Play [Journey][journey] and [Persona 5][persona_5]. The first videogames is a brief but touching journey together with other wanderers in the midst of breathtaking landscapes. The latter is an improbable role-playing game, a masterpiece of style with a compelling story about timeless topics.
+Play [Journey][journey] and [Persona 5][persona_5]. The first videogame is a brief but touching journey shared with other wanderers in the midst of breathtaking landscapes. The latter is an improbable role-playing game, a masterpiece of style with a compelling story about timeless topics.
 
 Read [Quiet: The Power of Introverts in a World That Can't Stop Talking][quiet]. A tell-tale book about the nature of introverts, whose strong points are often underestimated.
 
