@@ -61,26 +61,29 @@ last update: <?= LAST_UPDATE ?>
 
         <div id="layout">
 
-            <div id="title"><h1>
+            <div id="title">
                 <?php if ($page->lang == "en"): ?>
-                    Matteo Silvestro<span class="dim">'s page</span></h1>
+                    <h1>Matteo Silvestro<span class="dim">'s page</span></h1>
                 <?php else: ?>
-                    <span class="dim">La pagina di</span> Matteo Silvestro</h1>
+                    <h1><span class="dim">La pagina di</span> Matteo Silvestro</h1>
                 <?php endif; ?>
             </div>
 
             <div id="menu">
-                <ul>
-                    <?php foreach ($page->get_menu() as $menu_page_id => $menu_page_title): ?>
-                        <?php if ($menu_page_title == $page->title): ?>
-                            <li><?= $menu_page_title ?></li>
-                        <?php elseif ($menu_page_title == $page->get_default_page()): ?>
-                            <li><a href="<?= $page->get_lang_prefix() ?>"><?= $menu_page_title ?></a></li>
-                        <?php else: ?>
-                            <li><a href="<?= $page->get_lang_prefix().$page->get_url($menu_page_title) ?>"><?= $menu_page_title ?></a></li>
-                        <?php endif; ?>
-                    <?php endforeach; ?>
-                </ul>
+                <nav>
+                    <ul>
+                        
+                        <?php foreach ($page->get_menu() as $menu_page_id => $menu_page_title): ?>
+                            <?php if ($menu_page_title == $page->title): ?>
+                                <li><?= $menu_page_title ?></li>
+                            <?php elseif ($menu_page_title == $page->get_default_page()): ?>
+                                <li><a href="<?= $page->get_lang_prefix() ?>"><?= $menu_page_title ?></a></li>
+                            <?php else: ?>
+                                <li><a href="<?= $page->get_lang_prefix().$page->get_url($menu_page_title) ?>"><?= $menu_page_title ?></a></li>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    </ul>
+                </nav>
             </div>
 
             <h2><?= $page->title ?></h2>
