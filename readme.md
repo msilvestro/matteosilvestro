@@ -1,6 +1,6 @@
 # Matteo Silvestro's webpage
 
-I'm Matteo Silvestro, a scatterbrained wanderer always looking for new routes. This is my personal page, in which I express myself and showcase my works.
+I'm Matteo Silvestro, a scatterbrained wanderer always looking for new routes. This is the code my personal page.
 
 ## Components of the engine
 
@@ -12,7 +12,7 @@ Each page has a title and a description, then it is divided into different cards
 
 The anatomy of a page is the following:
 
-```md
+```markdown
 ## Page title
 
 Optional description
