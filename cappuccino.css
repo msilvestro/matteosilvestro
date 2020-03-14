@@ -3,7 +3,7 @@ Cappuccino CSS Style - Valid CSS3
 by Matteo Silvestro
 CC BY 4.0
 http://creativecommons.org/licenses/by/4.0/
-last update: 11/03/2020
+last update: 13/03/2020
 --*/
 
 /* -- Page-wise stylings -- */
@@ -99,6 +99,11 @@ span.dim {
 #menu ul li {
     display: inline;
     font-size: 2em;
+    margin-right: 0.3em;
+}
+
+#menu ul li:last-child {
+    margin-right: 0;
 }
 
 #menu ul li a {
@@ -263,12 +268,15 @@ span.big {
         padding: 0;
     }
 
-    .column.right {
-        margin-bottom: 1em;
+    .right.column {
+        padding-left: 0;
+        margin-bottom: 2.9em;
     }
 
-    .column.left {
+    .left.column {
+        padding-right: 0;
         padding-top: 0;
+        text-align: left;
     }
 
 }

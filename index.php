@@ -1,6 +1,9 @@
 <?php
 include 'php/Pagemaker.php';
 
+define('VERSION', 'theta');
+define('LAST_UPDATE', '13/03/2020');
+
 define('DEFAULT_PAGE_ID', 'introduction');
 define('DEFAULT_LANGUAGE', 'en');
 define('SECOND_LANGUAGE', 'it');
@@ -22,6 +25,13 @@ $pages = array(
 
 $page = new Pagemaker($pages);
 ?>
+<!--
+Matteo Silvestro's page / La pagina di Matteo Silvestro
+version <?= VERSION ?> by Matteo Silvestro
+CC BY 4.0
+http://creativecommons.org/licenses/by/4.0/
+last update: <?= LAST_UPDATE ?>
+-->
 <!DOCTYPE html>
 <html lang="<?= $page->lang ?>">
 
@@ -94,9 +104,9 @@ $page = new Pagemaker($pages);
             <?php endforeach; ?>
 
             <?php if ($page->lang == "en"): ?>
-                <div id="footer">Matteo Silvestro 2020 — Version <abbr title="theta">&theta;</abbr> — <a href="cappuccino.css">Cappuccino</a> style — <a href="<?= $page->get_markdown_source() ?>">Markdown</a> source — Versione <a href="<?= $page->get_translated_page() ?>">italiana</a></div>
+                <div id="footer">Matteo Silvestro <?= get_year_from_date(LAST_UPDATE) ?> — Version <abbr title="<?= VERSION ?>">&<?= VERSION ?>;</abbr> — <a href="/cappuccino.css">Cappuccino</a> style — <a href="<?= $page->get_markdown_source() ?>">Markdown</a> source — Versione <a href="<?= $page->get_translated_page() ?>">italiana</a></div>
             <?php else: ?>
-                <div id="footer">Matteo Silvestro 2020 — Versione <abbr title="theta">&theta;</abbr> — Stile <a href="cappuccino.css">Cappuccino</a> — Sorgente <a href="<?= $page->get_markdown_source() ?>">Markdown</a> — <a href="<?= $page->get_translated_page() ?>">English</a> version</div>
+                <div id="footer">Matteo Silvestro <?= get_year_from_date(LAST_UPDATE) ?> — Versione <abbr title="<?= VERSION ?>">&<?= VERSION ?>;</abbr> — Stile <a href="/cappuccino.css">Cappuccino</a> — Sorgente <a href="<?= $page->get_markdown_source() ?>">Markdown</a> — <a href="<?= $page->get_translated_page() ?>">English</a> version</div>
             <?php endif; ?>
 
         </div>

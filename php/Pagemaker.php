@@ -32,6 +32,12 @@ function render_video_tags($html) {
 </div>', $html);
 }
 
+# Extract the year from a date in the format 'DD/MM/YYYY'.
+function get_year_from_date($date) {
+    $date_exploded = explode('/', $date);
+    return end($date_exploded);
+}
+
 class Pagemaker {
 
     protected $md_parser;
@@ -279,7 +285,7 @@ class Pagemaker {
         if ($this->title == '404') {
             # If the page is not found, create the link between the 404 page in the
             # two languages.
-            return get_lang_prefix($other_lang).'404';
+            return $this->get_lang_prefix($other_lang).'404';
         }
         foreach ($this->get_menu() as $page_id => $page_title) {
             # Search the name of the page in the other language.

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /dev/
+Disallow: /img/
+Disallow: /js/
+Disallow: /pages/
+Disallow: /php/
