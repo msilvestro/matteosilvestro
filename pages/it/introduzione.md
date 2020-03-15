@@ -14,7 +14,7 @@ Ricerco la bellezza nelle ordinate linee di un codice sorgente, nell'armonioso s
 
 Le mie identità sono disseminate per la rete, ognuna con il suo scopo.
 Su [Facebook][fb] si trova il mio lato più mondano, su [LinkedIn][li] quello più professionale. Su [Twitter][tw] sono presenti brevi e raffinati telegrammi, su [Instagram][ig] istanti che hanno catturato la mia attenzione.
-Le mie incostanti ossesioni musicali sono documentate su [Last.fm][lf], mentre [Steam][st] tiene traccia delle innumerevoli esperienze videoludiche in cui mi immergo.
+Le mie incostanti ossessioni musicali sono documentate su [Last.fm][lf], mentre [Steam][st] tiene traccia delle innumerevoli esperienze videoludiche in cui mi immergo.
 I miei progetti musicali sono ospitati su [YouTube][yt] e [MuseScore][ms], mentre [GitHub][gh] raccoglie le mie opere in codice.
 
 Infine ecco alcuni consigli, assolutamente non imperativi.

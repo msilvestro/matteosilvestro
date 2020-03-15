@@ -8,7 +8,7 @@ I'm Matteo Silvestro, a scatterbrained wanderer always looking for new routes. H
 
 Having recently started choir classes and considering the period of the year, I wanted to record an a cappella version of a Christmas carol with my family. However, this idea was way more demanding than I realized and I eventually decided to entrust this task to my Game Boy Color, which lately I had repurposed as musical synthesizer thanks to the [Nanoloop One][nlo] cartridge.
 
-I chose *Tu scendi dalle stelle* (*You Come Down from the Stars*) because it is a traditional Italian Christmas carol, as well as being a personal favourite.
+I chose *Tu scendi dalle stelle* (*You Come Down from the Stars*) because it is a traditional Italian Christmas carol, as well as being a personal favorite.
 
 This is the first verse as sung by the Game Boy Color in the video:
 
@@ -90,7 +90,7 @@ Following their steps, I started to make use of my [Korg DSN-12][dsn12], an anal
 
 The game that changed me from casual player to passionate videogame enthusiast was *Portal*. Both gameplay and story are masterful, and the sequel is even better. *Reconstructing More Science* comes right from *Portal 2* and it is, in my opinion, the most beautiful piece of the entire soundtrack.
 
-After a brief research I found the excellent transcription from [Taioo][taioo], which was unfortunately based off the trailer version and was lacking the wonderful central part. I immedialy got to work and managed to finish it, creating an arrangement that played beautifully on the piano. Today it is still my forte and I'm never tired of performing it.
+After a brief research I found the excellent transcription from [Taioo][taioo], which was unfortunately based off the trailer version and was lacking the wonderful central part. I immediately got to work and managed to finish it, creating an arrangement that played beautifully on the piano. Today it is still my forte and I'm never tired of performing it.
 
 [taioo]: https://www.youtube.com/watch?v=ElGJUXZdCd0
 

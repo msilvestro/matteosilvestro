@@ -112,7 +112,7 @@ Dopo una breve ricerca trovai l'ottimo adattamento di [Taioo][taioo], che però 
 ### Inno d'Italia
 @ 17 marzo 2011
 
-Questo è stato il mio primo video ed ha un valore nostalgico per me. In quel periodo ero affascianto dallo Stylophone, il piccolo organo elettronico.
+Questo è stato il mio primo video ed ha un valore nostalgico per me. In quel periodo ero affascinato dallo Stylophone, il piccolo organo elettronico.
 
 Mi si presentò l'occasione di metterlo alla prova quando erano in preparazione i festeggiamenti per i 150 anni dell'Unità d'Italia, avvenuta il 17 marzo 1861. Mi misi all'opera, adattando l'*Inno d'Italia* alla piccola tastiera dello Stylophone e creando un montaggio che richiamasse la bandiera italiana.
 

@@ -13,7 +13,7 @@ La tesi, dal titolo **Computer-Assisted Evaluation of Story-Driven Interactive S
 
 La valutazione della narrazione che risulta da un sistema di storytelling non è un compito semplice, nemmeno nel caso di sistemi lineari. Per una storia interattiva, lo spazio dei possibili sviluppi può crescere molto velocemente e diventare difficile da gestire. Il creatore della storia non ha a sua disposizione pressoché alcun aiuto in questo processo.
 
-Viene proposta, partendo da articoli precedenti, una metodologia generale per valutare i sistemi di storytelling interattivi basati sulla storia utilizzando clustering, estrazione di curve di tensione e sondaggi. Questa procedura restituisce un insieme di cluster, ognuno con la sua curva di tensione e il suo punteggio qualitativo medio. Il creatore della storia può ispezionare il clustering ottenuto e iterare sul suo sistema di storytelling alla luce delle nuove conoscenze acquisite. Ciò potrebbe portare anche a un'associazione tra la forma della curva di tensiona e la qualità di una storia.
+Viene proposta, partendo da articoli precedenti, una metodologia generale per valutare i sistemi di storytelling interattivi basati sulla storia utilizzando clustering, estrazione di curve di tensione e sondaggi. Questa procedura restituisce un insieme di cluster, ognuno con la sua curva di tensione e il suo punteggio qualitativo medio. Il creatore della storia può ispezionare il clustering ottenuto e iterare sul suo sistema di storytelling alla luce delle nuove conoscenze acquisite. Ciò potrebbe portare anche a un'associazione tra la forma della curva di tensione e la qualità di una storia.
 
 Questa metodologia viene applicata a un sistema di storytelling interattivo basato sulla storia per mostrare i suoi conseguimenti attuali e potenziali, rispettivamente. I risultati indicano che i cluster, anche se non ben formati, mostrano punteggi qualitativi differenti e che alcune curve di tensione sono associate a storie migliori. Anche se il metodo si è dimostrato valido, c'è spazio per miglioramenti.
 
@@ -57,7 +57,7 @@ Un algoritmo efficiente per ottenere questo risultato si chiama *coupling from t
 
 @ 10 ottobre 2015
 
-La tesi, dal titolo **MCTS e videogiochi: un'applicazione per le Gare Pokémon Live**, è stata un'esperienza divertente e sicuramente un po' sconsiderata, ma i risultati si sono rivelati molto interessanti e incoraggianti. Oltrettutto, essere riuscito a coniugare i Pokémon e la matematica è un'impresa di cui sono piuttosto fiero.
+La tesi, dal titolo **MCTS e videogiochi: un'applicazione per le Gare Pokémon Live**, è stata un'esperienza divertente e sicuramente un po' sconsiderata, ma i risultati si sono rivelati molto interessanti e incoraggianti. Oltretutto, essere riuscito a coniugare i Pokémon e la matematica è un'impresa di cui sono piuttosto fiero.
 
 #### Sommario
 

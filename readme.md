@@ -7,7 +7,7 @@ I'm Matteo Silvestro, a scatterbrained wanderer always looking for new routes. T
 
 The engine that powers the whole website is **Pagemaker** and is a PHP library written by myself that takes as input a customized Markdown page, extract its parts and converts them to plain HTML.
 
-All pages are valid Markdown files, but have special delimiters that identify its diffent parts.
+All pages are valid Markdown files, but have special delimiters that identify its different parts.
 
 Each page has a title and a description, then it is divided into different cards. Each card has its own title, optional subtitle, right column and left column.
 
@@ -17,6 +17,7 @@ The anatomy of a page is the following:
 ## Page title
 
 Optional description
+
 
 ### Title of first card
 
