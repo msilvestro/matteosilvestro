@@ -1,97 +1,114 @@
-body, span.tumblr_theme_marker_blogtitle, span.tumblr_theme_marker_title {
-    font-family: 'Bookman Old Style', Georgia, serif;
+body {
+  color: #eeeeee;
+}
+
+body,
+h1.blog-title,
+span.tumblr_theme_marker_blogtitle,
+span.tumblr_theme_marker_title {
+  font-family: "Bookman Old Style", Georgia, serif;
+}
+
+h2 {
+  font-weight: bold !important;
 }
 
 /* -- Title -- */
 
 h1.blog-title {
-    text-transform: uppercase;
-    font-size: 2rem;
-
+  font-size: 2.5em;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 span.description {
-    color: #696969 !important;
+  color: #696969 !important;
 }
-
 
 /* -- Menu -- */
 
 .nav-wrapper .nav-item a.label {
-    color: #696969;
-    font-weight: normal;
-    font-size: 1.2rem;
-    border-bottom: 1px solid #696969;
+  color: #696969;
+  font-weight: normal;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #696969;
 }
 
 .nav-wrapper .nav-item a.label:hover {
-    color: #262626;
-    background-color: #eeeeee;
+  color: #262626;
+  background-color: #eeeeee;
 }
 
 .nav-wrapper .nav-item .label.current-page {
-    padding: 0;
-    color: #eeeeee;
-    border-bottom: 0;
+  padding: 0;
+  color: #eeeeee;
+  border-bottom: 0;
 }
 
 /* -- Blog post -- */
 
 .post-wrapper {
-    color: #eeeeee;
-    background-color: #262626;
-    border: 1px solid #eeeeee;
+  color: #eeeeee;
+  background-color: #262626;
+  border: 1px solid #eeeeee;
 }
 
 /* Post title. */
 .post-content h2.title {
-    font-weight: bold;
-    font-size: 1.6rem;
+  font-weight: bold;
+  font-size: 1.6rem;
 }
 
 /* Custom link style. */
-.post-content a, .inline-meta a.meta-item, .reblog-list .post-reblog-header a.post-tumblelog-name {
-    text-decoration: none;
-    color: #eeeeee;
-    border-bottom: 1px solid #eeeeee;
+.post-content a,
+.inline-meta a.meta-item,
+.reblog-list .post-reblog-header a.post-tumblelog-name {
+  text-decoration: none;
+  color: #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
-.post-content a:hover, .inline-meta a.meta-item:hover, .reblog-list .post-reblog-header a.post-tumblelog-name:hover {
-    color: #262626;
-    background-color: #eeeeee;
+.post-content a:hover,
+.inline-meta a.meta-item:hover,
+.reblog-list .post-reblog-header a.post-tumblelog-name:hover {
+  color: #262626;
+  background-color: #eeeeee;
 }
 
 a.read_more {
-    color: #696969;
-    border-bottom: 1px solid #696969;
+  color: #696969;
+  border-bottom: 1px solid #696969;
 }
 
 /* Remove custom link style for Share and Reblog buttons. */
-.post-controls .control a.share, .post-controls .control a.reblog_button {
-    color: #eeeeee;
-    border-bottom: 0;
+.post-controls .control a.share,
+.post-controls .control a.reblog_button {
+  color: #eeeeee;
+  border-bottom: 0;
 }
 
-.post-controls .control a.share:hover, .post-controls .control a.reblog_button:hover {
-    color: #eeeeee;
-    background-color: transparent;
+.post-controls .control a.share:hover,
+.post-controls .control a.reblog_button:hover {
+  color: #eeeeee;
+  background-color: transparent;
 }
 
 /* Capitalize the first letter of a paragraph, so that it looks cool. */
 .body-text p:first-of-type::first-letter {
-    font-size: 3.1em;
-    float: left;
-    margin-right: .08em;
-    margin-top: -0.22em;
-    margin-bottom: -0.22em;
+  font-size: 3.1em;
+  float: left;
+  margin-right: 0.08em;
+  margin-top: -0.22em;
+  margin-bottom: -0.44em;
 }
 
-@-moz-document url-prefix() { /* hack for Firefox */
-    /* In Firefox the letter is already at the right height, the other browsers
+@-moz-document url-prefix() {
+  /* hack for Firefox */
+  /* In Firefox the letter is already at the right height, the other browsers
        instead place it much lower */
-    .body-text p:first-of-type::first-letter {
-        font-size: 3.2em;
-        margin-top: 0.01em;
-        margin-bottom: 0;
-    }
+  .body-text p:first-of-type::first-letter {
+    font-size: 3.2em;
+    margin-top: 0.01em;
+    margin-bottom: 0;
+  }
 }
