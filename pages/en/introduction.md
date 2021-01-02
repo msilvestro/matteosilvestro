@@ -33,7 +33,6 @@ Read [Quiet: The Power of Introverts in a World That Can't Stop Talking][quiet].
 [yt]: https://www.youtube.com/c/MatteoSilvestro
 [ms]: https://musescore.com/matteosilvestro
 [gh]: https://github.com/msilvestro
-
 [the_good_place]: https://www.nbc.com/the-good-place
 [journey]: https://thatgamecompany.com/journey/
 [persona_5]: https://atlus.com/p5r/
@@ -43,9 +42,9 @@ Read [Quiet: The Power of Introverts in a World That Can't Stop Talking][quiet].
 
 ![My avatar][avatar]
 
-* [My curriculum vitae](/files/cv/cv_en.pdf)
-* [Le note di Matteo Silvestro (personal blog)](https://msilvestro.tumblr.com/)
-* [Tweet @msilvestro](https://twitter.com/intent/tweet?screen_name=msilvestro)
-* [Write me an email](mailto:matteosilvestro@altervista.org)
+- [My curriculum vitae](/files/cv/cv_en.pdf)
+- [Le note di Matteo Silvestro (personal blog)](https://mattlovelace.tumblr.com)
+- [Tweet @msilvestro](https://twitter.com/intent/tweet?screen_name=msilvestro)
+- [Write me an email](mailto:matteosilvestro@altervista.org)
 
 [avatar]: /img/persona_matt.png
