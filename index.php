@@ -2,7 +2,7 @@
 include 'php/Pagemaker.php';
 
 define('VERSION', 'theta');
-define('LAST_UPDATE', '13/03/2020');
+define('LAST_UPDATE', '02/01/2021');
 
 define('DEFAULT_PAGE_ID', 'introduction');
 define('DEFAULT_LANGUAGE', 'en');

@@ -2,7 +2,6 @@
 
 Sono Matteo Silvestro, un errante con la testa fra le nuvole in cerca di strade non battute. Questa è la mia pagina personale, in cui esprimo me stesso e condivido le mie opere.
 
-
 ### La mia identità
 
 > Per le ottime idee non serve tempo. Servono prima un sacco di pessime idee.  
@@ -34,7 +33,6 @@ Leggi [Quiet: Il potere degli introversi in un mondo che non sa smettere di parl
 [yt]: https://www.youtube.com/c/MatteoSilvestro
 [ms]: https://musescore.com/matteosilvestro
 [gh]: https://github.com/msilvestro
-
 [the_good_place]: https://www.nbc.com/the-good-place
 [journey]: https://thatgamecompany.com/journey/
 [persona_5]: https://atlus.com/p5r/
@@ -44,9 +42,9 @@ Leggi [Quiet: Il potere degli introversi in un mondo che non sa smettere di parl
 
 ![Il mio avatar][avatar]
 
-* [Il mio curriculum vitae](/files/cv/cv_it.pdf)
-* [Le note di Matteo Silvestro (blog personale)](https://msilvestro.tumblr.com/)
-* [Invia un tweet a @msilvestro](https://twitter.com/intent/tweet?screen_name=msilvestro)
-* [Scrivimi una mail](mailto:matteosilvestro@altervista.org)
+- [Il mio curriculum vitae](/files/cv/cv_it.pdf)
+- [Le note di Matteo Silvestro (blog personale)](https://mattlovelace.tumblr.com)
+- [Invia un tweet a @msilvestro](https://twitter.com/intent/tweet?screen_name=msilvestro)
+- [Scrivimi una mail](mailto:matteosilvestro@altervista.org)
 
 [avatar]: /img/persona_matt.png
