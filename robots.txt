@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /dev/
-Disallow: /img/
-Disallow: /js/
-Disallow: /pages/
-Disallow: /php/
-Sitemap: http://www.matteosilvestro.com/sitemap.xml
