@@ -1,0 +1,35 @@
+.cube {
+  display: flex;
+  flex-direction: column;
+}
+
+.cube .face {
+  border: 5px solid white;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.cube .face:hover {
+  background-color: white;
+  color: #262626;
+}
+
+.cube .top {
+  transform: rotate(-30deg) skewX(30deg) scaleY(0.86);
+}
+
+.bottom-faces {
+  display: flex;
+}
+
+.cube .bottom-left {
+  transform: skewY(30deg) scaleX(0.86);
+}
+
+.cube .bottom-right {
+  transform: skewY(-30deg) scaleX(0.86);
+}

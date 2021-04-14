@@ -1,7 +1,9 @@
 import React from "react"
 import "./App.css"
 
-function App() {
+import CubeNav from "./components/CubeNav"
+
+const App = () => {
   return (
     <div className="website">
       <header>
@@ -27,13 +29,11 @@ function App() {
           </p>
         </section>
       </div>
-      <div className="cube">
-        <div className="face top">Fun</div>
-        <div className="bottom-faces">
-          <div className="face bottom-left">Work</div>
-          <div className="face bottom-right">Edu</div>
-        </div>
-      </div>
+      <CubeNav
+        size={80}
+        fontSize="1.2em"
+        faceNames={{ top: "Fun", bottomLeft: "Work", bottomRight: "Edu" }}
+      />
     </div>
   )
 }
