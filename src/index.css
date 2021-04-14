@@ -5,11 +5,19 @@
                           you specify for an element's width and height */
 }
 
-html {
-  margin-left: calc(100vw - 100%); /* avoid scrollbar jumps */
-}
-
 body {
   margin: 0;
   font-family: "Rubik", sans-serif;
+  background-color: #262626;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+  border-bottom: 1px solid #262626;
+}
+
+a:hover {
+  color: white;
+  background-color: #262626;
 }
