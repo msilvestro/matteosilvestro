@@ -33,6 +33,7 @@ const App = () => {
         size={80}
         fontSize="1.2em"
         faceNames={{ top: "Fun", bottomLeft: "Work", bottomRight: "Edu" }}
+        margin={10}
       />
     </div>
   )
