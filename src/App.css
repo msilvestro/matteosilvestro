@@ -1,25 +1,54 @@
 .website {
+  max-width: 756px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-left: 180px;
+}
+
+.title > header {
+  margin: 30px 0;
+}
+
+.title > header > h1 {
+  margin: -0.24em 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
   display: flex;
   flex-direction: column;
+  margin-right: 30px;
   align-items: center;
 }
 
-header > h1 {
-  color: white;
-  padding: 0;
-  margin: 0;
-  text-transform: uppercase;
-  margin: 30px 0;
-  font-size: 3em;
+.profile-picture {
+  margin-bottom: 10px;
+}
+
+.profile-picture:hover img {
+  background-color: white;
+}
+
+.profile-picture > img {
+  height: 150px;
+  width: 150px;
+  border: 4px solid white;
 }
 
 .content {
   background-color: white;
   color: #262626;
-  margin-bottom: 30px;
-  max-width: 576px;
   padding: 30px;
-  overflow: auto;
+  margin-bottom: 30px;
 }
 
 .content > header {
@@ -29,4 +58,9 @@ header > h1 {
   padding-right: 30px;
   padding-bottom: 10px;
   float: left;
+}
+
+.content > section > p {
+  margin: 0;
+  padding: 0;
 }
