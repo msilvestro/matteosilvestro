@@ -11,32 +11,59 @@ type Props = {
   size: number
   fontSize?: string
   faceNames: FaceNames
+  margin?: number
 }
 
-const CubeNav: FC<Props> = ({ size, fontSize = "1em", faceNames }: Props) => {
+const cos30 = Math.cos(Math.PI / 6)
+const sin30 = Math.sin(Math.PI / 6)
+
+const CubeNav: FC<Props> = ({
+  size,
+  fontSize = "1em",
+  faceNames,
+  margin = 0,
+}: Props) => {
   return (
-    <div className="cube" style={{ fontSize }}>
+    <div
+      className="cube"
+      style={{
+        fontSize,
+        paddingBottom: (size * sin30) / 2,
+      }}
+    >
       <div
-        className="face top"
+        className="face"
         style={{
-          height: `${size}px`,
-          width: `${size}px`,
-          marginLeft: `${size / 2}px`,
-          marginBottom: `-${size / 9}px`,
+          height: size,
+          width: size,
+          marginLeft: (size + margin) / 2 - size * (1 - cos30),
+          marginBottom: -size * sin30 * 0.5 + margin,
+          transform: `rotate(-30deg) skewX(30deg) scaleY(${cos30})`,
         }}
       >
         {faceNames.top}
       </div>
       <div className="bottom-faces">
         <div
-          className="face bottom-left"
-          style={{ height: `${size}px`, width: `${size}px` }}
+          className="face"
+          style={{
+            height: size,
+            width: size,
+            marginLeft: (-size * (1 - cos30)) / 2,
+            marginRight: -size * (1 - cos30) + margin,
+            transform: `skewY(30deg) scaleX(${cos30})`,
+          }}
         >
           {faceNames.bottomLeft}
         </div>
         <div
-          className="face bottom-right"
-          style={{ height: `${size}px`, width: `${size}px` }}
+          className="face"
+          style={{
+            height: size,
+            width: size,
+            marginRight: (-size * (1 - cos30)) / 2,
+            transform: `skewY(-30deg) scaleX(${cos30})`,
+          }}
         >
           {faceNames.bottomRight}
         </div>
