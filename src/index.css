@@ -37,11 +37,3 @@ blockquote {
   padding: 0.5em 1em;
   border-left: 1px solid #262626;
 }
-
-section {
-  margin-bottom: 1em;
-}
-
-section:last-child {
-  margin-bottom: 0;
-}
