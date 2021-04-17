@@ -5,6 +5,10 @@
                           you specify for an element's width and height */
 }
 
+html {
+  margin-left: calc(100vw - 100%); /* avoid scrollbar jumps */
+}
+
 body {
   margin: 0;
   font-family: "Rubik", sans-serif;
