@@ -21,15 +21,15 @@ const App = () => {
       </div>
       <div className="main">
         <div className="sidebar">
-          <div
-            className={
-              "profile-picture" + toggleClass("selected", page === "index")
-            }
-            onClick={() => setPage("index")}
-          >
-            <img src={persona_matt} alt="Profile" />
-          </div>
           <nav>
+            <div
+              className={
+                "profile-picture" + toggleClass("selected", page === "index")
+              }
+              onClick={() => setPage("index")}
+            >
+              <img src={persona_matt} alt="Profile" />
+            </div>
             <CubeNav
               size={80}
               fontSize="1.2em"
