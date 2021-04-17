@@ -1,13 +1,15 @@
-import React from "react"
+import React, { useState } from "react"
 import "./App.css"
 import persona_matt from "./assets/persona_matt.png"
 
 import CubeNav from "./components/CubeNav"
 import MarkdownContent from "./components/MarkdownContent"
 
-import { getPage } from "./pages"
+import { getPage, PageNames } from "./pages"
 
 const App = () => {
+  const [page, setPage] = useState<PageNames>("index")
+
   return (
     <div className="website">
       <div className="title">
@@ -17,7 +19,10 @@ const App = () => {
       </div>
       <div className="main">
         <div className="sidebar">
-          <div className="profile-picture selected">
+          <div
+            className="profile-picture selected"
+            onClick={() => setPage("index")}
+          >
             <img src={persona_matt} alt="Profile" />
           </div>
           <nav>
@@ -25,16 +30,19 @@ const App = () => {
               size={80}
               fontSize="1.2em"
               faceNames={{
-                top: "Fun",
-                bottomLeft: "Work",
-                bottomRight: "Edu",
+                top: { name: "Fun", onClick: () => setPage("fun") },
+                bottomLeft: { name: "Work", onClick: () => setPage("work") },
+                bottomRight: {
+                  name: "Edu",
+                  onClick: () => setPage("education"),
+                },
               }}
               margin={10}
             />
           </nav>
         </div>
         <section className="content">
-          <MarkdownContent file={getPage("index")} />
+          <MarkdownContent file={getPage(page)} />
         </section>
       </div>
     </div>

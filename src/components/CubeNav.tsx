@@ -1,16 +1,19 @@
 import React, { FC } from "react"
 import "./CubeNav.css"
 
-type FaceNames = {
-  top: string
-  bottomLeft: string
-  bottomRight: string
+type Side = {
+  name: string
+  onClick?(): void
 }
 
 type Props = {
   size: number
   fontSize?: string
-  faceNames: FaceNames
+  faceNames: {
+    top: Side
+    bottomLeft: Side
+    bottomRight: Side
+  }
   margin?: number
 }
 
@@ -40,8 +43,9 @@ const CubeNav: FC<Props> = ({
           marginBottom: -size * sin30 * 0.5 + margin,
           transform: `rotate(-30deg) skewX(30deg) scaleY(${cos30})`,
         }}
+        onClick={faceNames.top.onClick}
       >
-        {faceNames.top}
+        {faceNames.top.name}
       </div>
       <div className="bottom-faces">
         <div
@@ -53,8 +57,9 @@ const CubeNav: FC<Props> = ({
             marginRight: -size * (1 - cos30) + margin,
             transform: `skewY(30deg) scaleX(${cos30})`,
           }}
+          onClick={faceNames.bottomLeft.onClick}
         >
-          {faceNames.bottomLeft}
+          {faceNames.bottomLeft.name}
         </div>
         <div
           className="face"
@@ -64,8 +69,9 @@ const CubeNav: FC<Props> = ({
             marginRight: (-size * (1 - cos30)) / 2,
             transform: `skewY(-30deg) scaleX(${cos30})`,
           }}
+          onClick={faceNames.bottomRight.onClick}
         >
-          {faceNames.bottomRight}
+          {faceNames.bottomRight.name}
         </div>
       </div>
     </div>
