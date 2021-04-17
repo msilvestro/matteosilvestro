@@ -35,17 +35,18 @@
   cursor: pointer;
 }
 
-.profile-picture:hover img {
-  background-color: white;
-}
-
 .profile-picture > img {
   height: 150px;
   width: 150px;
   border: 4px solid white;
 }
 
-.content {
+.profile-picture:hover > img,
+.selected > img {
+  background-color: white;
+}
+
+section.content {
   background-color: white;
   color: #262626;
   padding: 30px;
@@ -53,18 +54,16 @@
   margin-top: 0;
 }
 
-.content > header {
-  font-size: 2em;
-  font-style: italic;
-  padding-top: 10px;
-  padding-right: 30px;
-  padding-bottom: 10px;
-  float: left;
+section.content > h2 {
+  display: none;
 }
 
-.content > section > p {
-  margin: 0;
-  padding: 0;
+section.content > section > h3 {
+  float: left;
+  font-weight: normal;
+  font-size: 1.6em;
+  margin: 0.15em 0.5em;
+  margin-left: 0;
 }
 
 @media (max-width: 768px) {
