@@ -46,6 +46,10 @@
   background-color: white;
 }
 
+.selected {
+  cursor: default;
+}
+
 section.content {
   background-color: white;
   color: #262626;

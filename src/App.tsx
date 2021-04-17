@@ -5,6 +5,8 @@ import persona_matt from "./assets/persona_matt.png"
 import CubeNav from "./components/CubeNav"
 import MarkdownContent from "./components/MarkdownContent"
 
+import { toggleClass } from "./utils/css"
+
 import { getPage, PageNames } from "./pages"
 
 const App = () => {
@@ -20,7 +22,9 @@ const App = () => {
       <div className="main">
         <div className="sidebar">
           <div
-            className="profile-picture selected"
+            className={
+              "profile-picture" + toggleClass("selected", page === "index")
+            }
             onClick={() => setPage("index")}
           >
             <img src={persona_matt} alt="Profile" />
@@ -33,12 +37,17 @@ const App = () => {
                 top: {
                   name: "Fun",
                   onClick: () => setPage("fun"),
-                  selected: true,
+                  selected: page === "fun",
                 },
-                bottomLeft: { name: "Work", onClick: () => setPage("work") },
+                bottomLeft: {
+                  name: "Work",
+                  onClick: () => setPage("work"),
+                  selected: page === "work",
+                },
                 bottomRight: {
                   name: "Edu",
                   onClick: () => setPage("education"),
+                  selected: page === "education",
                 },
               }}
               margin={10}
