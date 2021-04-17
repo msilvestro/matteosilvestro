@@ -30,7 +30,11 @@ const App = () => {
               size={80}
               fontSize="1.2em"
               faceNames={{
-                top: { name: "Fun", onClick: () => setPage("fun") },
+                top: {
+                  name: "Fun",
+                  onClick: () => setPage("fun"),
+                  selected: true,
+                },
                 bottomLeft: { name: "Work", onClick: () => setPage("work") },
                 bottomRight: {
                   name: "Edu",
