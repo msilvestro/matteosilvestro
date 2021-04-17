@@ -1,9 +1,31 @@
-import React, { FC } from "react"
+import React, { FC, CSSProperties } from "react"
 import "./CubeNav.css"
 
 type Side = {
   name: string
   onClick?(): void
+  selected?: boolean
+}
+
+type SideProps = {
+  side: Side
+  style: CSSProperties
+}
+
+const toggleClass = (className: string, condition: boolean) => {
+  return condition ? ` ${className}` : ""
+}
+
+const CubeSide: FC<SideProps> = ({ side, style }: SideProps) => {
+  return (
+    <div
+      className={"face" + toggleClass("selected", side.selected || false)}
+      style={style}
+      onClick={side.onClick}
+    >
+      {side.name}
+    </div>
+  )
 }
 
 type Props = {
@@ -34,8 +56,8 @@ const CubeNav: FC<Props> = ({
         paddingBottom: (size * sin30) / 2,
       }}
     >
-      <div
-        className="face"
+      <CubeSide
+        side={faceNames.top}
         style={{
           height: size,
           width: size,
@@ -43,13 +65,10 @@ const CubeNav: FC<Props> = ({
           marginBottom: -size * sin30 * 0.5 + margin,
           transform: `rotate(-30deg) skewX(30deg) scaleY(${cos30})`,
         }}
-        onClick={faceNames.top.onClick}
-      >
-        {faceNames.top.name}
-      </div>
+      />
       <div className="bottom-faces">
-        <div
-          className="face"
+        <CubeSide
+          side={faceNames.bottomLeft}
           style={{
             height: size,
             width: size,
@@ -57,22 +76,16 @@ const CubeNav: FC<Props> = ({
             marginRight: -size * (1 - cos30) + margin,
             transform: `skewY(30deg) scaleX(${cos30})`,
           }}
-          onClick={faceNames.bottomLeft.onClick}
-        >
-          {faceNames.bottomLeft.name}
-        </div>
-        <div
-          className="face"
+        />
+        <CubeSide
+          side={faceNames.bottomRight}
           style={{
             height: size,
             width: size,
             marginRight: (-size * (1 - cos30)) / 2,
             transform: `skewY(-30deg) scaleX(${cos30})`,
           }}
-          onClick={faceNames.bottomRight.onClick}
-        >
-          {faceNames.bottomRight.name}
-        </div>
+        />
       </div>
     </div>
   )
