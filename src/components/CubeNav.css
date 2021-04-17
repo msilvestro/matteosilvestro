@@ -14,7 +14,8 @@
   cursor: pointer;
 }
 
-.cube .face:hover {
+.cube .face:hover,
+.cube .selected {
   background-color: white;
   color: #262626;
 }
