@@ -1,22 +1,13 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import "./App.css"
 
-import markdownPage from "./pages/index.md"
+import indexPage from "./pages/index.md"
 import persona_matt from "./assets/persona_matt.png"
 
-import ReactMarkdown from "react-markdown"
-
 import CubeNav from "./components/CubeNav"
+import MarkdownContent from "./components/MarkdownContent"
 
 const App = () => {
-  const [content, setContent] = useState<string | undefined>(undefined)
-
-  useEffect(() => {
-    fetch(markdownPage)
-      .then((response) => response.text())
-      .then((text) => setContent(text))
-  }, [])
-
   return (
     <div className="website">
       <div className="title">
@@ -43,7 +34,7 @@ const App = () => {
           </nav>
         </div>
         <section className="content">
-          {content && <ReactMarkdown>{content}</ReactMarkdown>}
+          <MarkdownContent file={indexPage} />
         </section>
       </div>
     </div>
