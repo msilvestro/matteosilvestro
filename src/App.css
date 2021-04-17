@@ -58,18 +58,24 @@ section.content {
   background-color: white;
   color: #262626;
   padding: 30px;
+  padding-top: 0;
   margin: 0 30px;
 }
 
 section.content > h2 {
-  display: none;
+  display: inline-block;
+  background-color: #262626;
+  color: white;
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0.2em 0.5em;
 }
 
 section.content > h3 {
   float: left;
   font-weight: normal;
   font-size: 1.6em;
-  margin: 0.15em 0.5em;
+  margin: 0.14em 0.5em;
   margin-left: 0;
 }
 
@@ -82,6 +88,7 @@ section.content > h3 {
   .main {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
   }
 
   .sidebar > nav {
@@ -95,5 +102,9 @@ section.content > h3 {
     margin-top: 4px;
     margin-right: 20px;
     margin-bottom: 0;
+  }
+
+  section.content {
+    margin: 0;
   }
 }
