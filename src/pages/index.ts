@@ -1,19 +1,17 @@
 import indexFile from "./index.md"
 import funFile from "./fun.md"
-import educationFile from "./education.md"
+import eduFile from "./edu.md"
 import workFile from "./work.md"
 
-export type PageNames = "index" | "fun" | "education" | "work"
+export type PageName = "index" | "fun" | "edu" | "work"
 
-export const getPage = (pageName: PageNames) => {
-  switch (pageName) {
-    case "index":
-      return indexFile
-    case "fun":
-      return funFile
-    case "education":
-      return educationFile
-    case "work":
-      return workFile
-  }
+const pages = {
+  index: { file: indexFile },
+  fun: { file: funFile },
+  edu: { file: eduFile },
+  work: { file: workFile },
+}
+
+export const getPage = (pageName: PageName) => {
+  return pages[pageName].file
 }

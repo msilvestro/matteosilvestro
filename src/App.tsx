@@ -7,10 +7,10 @@ import MarkdownContent from "./components/MarkdownContent"
 
 import { toggleClass } from "./utils/css"
 
-import { getPage, PageNames } from "./pages"
+import { getPage, PageName } from "./pages"
 
 const App = () => {
-  const [page, setPage] = useState<PageNames>("index")
+  const [page, setPage] = useState<PageName>("index")
 
   return (
     <div className="website">
@@ -46,8 +46,8 @@ const App = () => {
                 },
                 bottomRight: {
                   name: "Edu",
-                  onClick: () => setPage("education"),
-                  selected: page === "education",
+                  onClick: () => setPage("edu"),
+                  selected: page === "edu",
                 },
               }}
               margin={10}
