@@ -1,11 +1,11 @@
 import React from "react"
 import "./App.css"
-
-import indexPage from "./pages/index.md"
 import persona_matt from "./assets/persona_matt.png"
 
 import CubeNav from "./components/CubeNav"
 import MarkdownContent from "./components/MarkdownContent"
+
+import { getPage } from "./pages"
 
 const App = () => {
   return (
@@ -34,7 +34,7 @@ const App = () => {
           </nav>
         </div>
         <section className="content">
-          <MarkdownContent file={indexPage} />
+          <MarkdownContent file={getPage("index")} />
         </section>
       </div>
     </div>
