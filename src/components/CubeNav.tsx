@@ -1,6 +1,8 @@
 import React, { FC, CSSProperties } from "react"
 import "./CubeNav.css"
 
+import { toggleClass } from "../utils/css"
+
 type Side = {
   name: string
   onClick?(): void
@@ -10,10 +12,6 @@ type Side = {
 type SideProps = {
   side: Side
   style: CSSProperties
-}
-
-const toggleClass = (className: string, condition: boolean) => {
-  return condition ? ` ${className}` : ""
 }
 
 const CubeSide: FC<SideProps> = ({ side, style }: SideProps) => {
