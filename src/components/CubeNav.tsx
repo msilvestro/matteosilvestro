@@ -15,11 +15,13 @@ type SideProps = {
 
 const CubeSide: FC<SideProps> = ({ side, style }: SideProps) => {
   return (
-    <ActiveLink href={side.path} activeClass="selected">
-      <div className="face" style={style}>
-        {side.name}
-      </div>
-    </ActiveLink>
+    <li>
+      <ActiveLink href={side.path} activeClass="selected">
+        <div className="face" style={style}>
+          {side.name}
+        </div>
+      </ActiveLink>
+    </li>
   )
 }
 
