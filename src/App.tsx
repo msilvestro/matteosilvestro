@@ -1,13 +1,11 @@
-import React, { useState } from "react"
-import { useRoutes, Link, useQueryParams } from "raviger"
+import React from "react"
+import { useRoutes, ActiveLink } from "raviger"
 
 import "./App.css"
 import persona_matt from "./assets/persona_matt.png"
 
 import CubeNav from "./components/CubeNav"
 import MarkdownContent from "./components/MarkdownContent"
-
-import { toggleClass } from "./utils/css"
 
 import { getPage, PageName } from "./pages"
 
@@ -21,8 +19,6 @@ const routes = {
 const App = () => {
   const route = useRoutes(routes)
 
-  const [page, setPage] = useState<PageName>("index")
-
   return (
     <div className="website">
       <div className="title">
@@ -33,40 +29,30 @@ const App = () => {
       <div className="main">
         <div className="sidebar">
           <nav>
-            <div
-              className={
-                "profile-picture" + toggleClass("selected", page === "index")
-              }
-              onClick={() => setPage("index")}
-            >
-              <img src={persona_matt} alt="Profile" />
-            </div>
+            <ActiveLink href="/" exactActiveClass="selected">
+              <div className="profile-picture">
+                <img src={persona_matt} alt="Home" />
+              </div>
+            </ActiveLink>
             <CubeNav
               size={80}
               fontSize="1.2em"
               faceNames={{
                 top: {
                   name: "Fun",
-                  onClick: () => setPage("fun"),
-                  selected: page === "fun",
+                  path: "/fun",
                 },
                 bottomLeft: {
                   name: "Work",
-                  onClick: () => setPage("work"),
-                  selected: page === "work",
+                  path: "/work",
                 },
                 bottomRight: {
                   name: "Edu",
-                  onClick: () => setPage("edu"),
-                  selected: page === "edu",
+                  path: "/edu",
                 },
               }}
               margin={10}
             />
-            <Link href="/">Home</Link>
-            <Link href="/fun">Fun</Link>
-            <Link href="/work">Work</Link>
-            <Link href="/edu">Education</Link>
           </nav>
         </div>
         <section className="content">{route}</section>

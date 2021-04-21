@@ -15,7 +15,7 @@
 }
 
 .cube .face:hover,
-.cube .selected {
+.cube .selected > div {
   background-color: white;
   color: #262626;
 }

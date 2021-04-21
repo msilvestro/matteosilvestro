@@ -46,7 +46,7 @@
 }
 
 .profile-picture:hover > img,
-.selected > img {
+.selected > .profile-picture > img {
   background-color: white;
 }
 

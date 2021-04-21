@@ -1,12 +1,11 @@
 import React, { FC, CSSProperties } from "react"
-import "./CubeNav.css"
+import { ActiveLink } from "raviger"
 
-import { toggleClass } from "../utils/css"
+import "./CubeNav.css"
 
 type Side = {
   name: string
-  onClick?(): void
-  selected?: boolean
+  path: string
 }
 
 type SideProps = {
@@ -16,13 +15,11 @@ type SideProps = {
 
 const CubeSide: FC<SideProps> = ({ side, style }: SideProps) => {
   return (
-    <div
-      className={"face" + toggleClass("selected", side.selected || false)}
-      style={style}
-      onClick={side.onClick}
-    >
-      {side.name}
-    </div>
+    <ActiveLink href={side.path} activeClass="selected">
+      <div className="face" style={style}>
+        {side.name}
+      </div>
+    </ActiveLink>
   )
 }
 
