@@ -1,14 +1,14 @@
-import indexFile from "./index.md"
+import homeFile from "./home.md"
 import funFile from "./fun.md"
-import eduFile from "./edu.md"
+import educationFile from "./education.md"
 import workFile from "./work.md"
 
-export type PageName = "index" | "fun" | "edu" | "work"
+export type PageName = "home" | "fun" | "education" | "work"
 
 const pages = {
-  index: { file: indexFile },
+  home: { file: homeFile },
   fun: { file: funFile },
-  edu: { file: eduFile },
+  education: { file: educationFile },
   work: { file: workFile },
 }
 
