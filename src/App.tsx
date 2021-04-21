@@ -29,30 +29,34 @@ const App = () => {
       <div className="main">
         <div className="sidebar">
           <nav>
-            <ActiveLink href="/" exactActiveClass="selected">
-              <div className="profile-picture">
-                <img src={persona_matt} alt="Home" />
-              </div>
-            </ActiveLink>
-            <CubeNav
-              size={80}
-              fontSize="1.2em"
-              faceNames={{
-                top: {
-                  name: "Fun",
-                  path: "/fun",
-                },
-                bottomLeft: {
-                  name: "Work",
-                  path: "/work",
-                },
-                bottomRight: {
-                  name: "Edu",
-                  path: "/edu",
-                },
-              }}
-              margin={10}
-            />
+            <ul>
+              <li>
+                <ActiveLink href="/" exactActiveClass="selected">
+                  <div className="profile-picture">
+                    <img src={persona_matt} alt="Home" />
+                  </div>
+                </ActiveLink>
+              </li>
+              <CubeNav
+                size={80}
+                fontSize="1.2em"
+                faceNames={{
+                  top: {
+                    name: "Fun",
+                    path: "/fun",
+                  },
+                  bottomLeft: {
+                    name: "Work",
+                    path: "/work",
+                  },
+                  bottomRight: {
+                    name: "Edu",
+                    path: "/edu",
+                  },
+                }}
+                margin={10}
+              />
+            </ul>
           </nav>
         </div>
         <section className="content">{route}</section>
