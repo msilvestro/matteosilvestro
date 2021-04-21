@@ -1,5 +1,5 @@
 import React from "react"
-import { useRoutes, ActiveLink } from "raviger"
+import { useRoutes, ActiveLink, Redirect } from "raviger"
 
 import "./App.css"
 import persona_matt from "./assets/persona_matt.png"
@@ -7,13 +7,15 @@ import persona_matt from "./assets/persona_matt.png"
 import CubeNav from "./components/CubeNav"
 import MarkdownContent from "./components/MarkdownContent"
 
-import { getPage, PageName } from "./pages"
+import { getPage } from "./pages"
 
 const routes = {
-  "/:pageName": ({ pageName }: { [k: string]: PageName }) => (
+  "/": () => <MarkdownContent file={getPage("home")} />,
+  "/home": () => <Redirect to="/" />,
+  "/:pageName": ({ pageName }: { [k: string]: string }) => (
     <MarkdownContent file={getPage(pageName)} />
   ),
-  "/": () => <MarkdownContent file={getPage("home")} />,
+  "*": () => <MarkdownContent file={getPage("404")} />,
 }
 
 const App = () => {
