@@ -34,6 +34,12 @@
   align-items: center;
 }
 
+nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .profile-picture {
   margin-bottom: 20px;
   cursor: pointer;
