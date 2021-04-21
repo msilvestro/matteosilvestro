@@ -1,4 +1,6 @@
 import React, { useState } from "react"
+import { useRoutes, Link, useQueryParams } from "raviger"
+
 import "./App.css"
 import persona_matt from "./assets/persona_matt.png"
 
@@ -9,7 +11,16 @@ import { toggleClass } from "./utils/css"
 
 import { getPage, PageName } from "./pages"
 
+const routes = {
+  "/:pageName": ({ pageName }: { [k: string]: PageName }) => (
+    <MarkdownContent file={getPage(pageName)} />
+  ),
+  "/": () => <MarkdownContent file={getPage("index")} />,
+}
+
 const App = () => {
+  const route = useRoutes(routes)
+
   const [page, setPage] = useState<PageName>("index")
 
   return (
@@ -52,11 +63,13 @@ const App = () => {
               }}
               margin={10}
             />
+            <Link href="/">Home</Link>
+            <Link href="/fun">Fun</Link>
+            <Link href="/work">Work</Link>
+            <Link href="/edu">Education</Link>
           </nav>
         </div>
-        <section className="content">
-          <MarkdownContent file={getPage(page)} />
-        </section>
+        <section className="content">{route}</section>
       </div>
     </div>
   )
