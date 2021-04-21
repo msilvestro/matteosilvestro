@@ -45,3 +45,9 @@ blockquote {
 blockquote > p {
   white-space: pre-line;
 }
+
+@media (max-width: 768px) {
+  html {
+    margin-left: 0;
+  }
+}
