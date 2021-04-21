@@ -13,7 +13,7 @@ const routes = {
   "/:pageName": ({ pageName }: { [k: string]: PageName }) => (
     <MarkdownContent file={getPage(pageName)} />
   ),
-  "/": () => <MarkdownContent file={getPage("index")} />,
+  "/": () => <MarkdownContent file={getPage("home")} />,
 }
 
 const App = () => {
@@ -51,7 +51,7 @@ const App = () => {
                   },
                   bottomRight: {
                     name: "Edu",
-                    path: "/edu",
+                    path: "/education",
                   },
                 }}
                 margin={10}
