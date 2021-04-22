@@ -1,6 +1,19 @@
 import React, { FC, useState, useEffect } from "react"
 
 import ReactMarkdown from "react-markdown"
+import { Link } from "raviger"
+
+const components = {
+  // @ts-ignore
+  a: ({ node, href, children, ...props }) =>
+    href[0] === "/" ? (
+      <Link href={href}>{children}</Link>
+    ) : (
+      <a href={href} {...props}>
+        {children}
+      </a>
+    ),
+}
 
 type Props = {
   file: string
@@ -19,7 +32,8 @@ const MarkdownContent: FC<Props> = ({ file }: Props) => {
     return null
   }
 
-  return <ReactMarkdown>{content}</ReactMarkdown>
+  // @ts-ignore
+  return <ReactMarkdown components={components}>{content}</ReactMarkdown>
 }
 
 export default MarkdownContent
