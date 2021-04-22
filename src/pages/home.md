@@ -1,31 +1,23 @@
-## Myself
+## About me
 
-> Good ideas don't take time. They take a lot of bad ideas first.
+> Good ideas don't take time.
+> They take a lot of bad ideas first.
 > —Ral Zarek
 
-I'm a scatterbrained wanderer always looking for new routes. My life
-is an adagio sostenuto in A minor played on a strange instrument.
+Mathematician by education, coder by passion, I play the piano and love
+videogames.
 
-I seek beauty in the tidy lines of a source code, in the harmonious
-flow of notes in a music staff and in the refined perfection of a
-mathematical formula.
+### My sides
 
-If you want to know me, you can discover the different sides of
-myself though the nav cube on the left.
+If you want to know more about me, you can discover the different sides of
+myself though the navigation cube.
 
-### Fun
+[Fun](/fun). In my free time I never get bored, since I have far too many hobbies, like
+enjoying a good story (whatever the medium) or building hopefully useful
+software.
 
-In my free time I struggle to get bored, I have far too many
-hobbies, like enjoying a good story (whatever the medium) or
-building hopefully useful software.
+[Education](/education). I studied mathematics because I always loved its problem-solving challenges and
+elegance in the solutions. I then fell in love with probability and statistics.
 
-### Education
-
-I studied mathematics because I always loved its problem-solving
-challenge and elegance in the solutions. I then fell in love with
-probability and statistics.
-
-### Work
-
-I'm a developer with a mathematical background. I like to tackle a
-problem in an abstract manner and then implement it in code.
+[Work](/work). I'm a developer with a mathematical background. I like to tackle problems in an
+abstract manner and then implement solutions in code.
