@@ -75,6 +75,16 @@ section.content > h2 {
 }
 
 section.content > h3 {
+  display: inline-block;
+  background-color: #262626;
+  color: white;
+  margin: 0;
+  margin-top: 0.4em;
+  margin-bottom: 0.85em;
+  padding: 0.15em 0.3em;
+}
+
+section.content > h4 {
   float: left;
   font-weight: normal;
   font-size: 1.6em;
