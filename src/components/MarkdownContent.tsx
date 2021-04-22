@@ -1,12 +1,22 @@
-import React, { FC, useState, useEffect } from "react"
+import React, {
+  FC,
+  useState,
+  useEffect,
+  AnchorHTMLAttributes,
+  ReactNode,
+} from "react"
 
-import ReactMarkdown from "react-markdown"
+import ReactMarkdown, { TransformOptions } from "react-markdown"
 import { Link } from "raviger"
 
-const components = {
-  // @ts-ignore
-  a: ({ node, href, children, ...props }) =>
-    href[0] === "/" ? (
+const components: TransformOptions["components"] = {
+  a: ({
+    node,
+    href,
+    children,
+    ...props
+  }: { node: ReactNode } & AnchorHTMLAttributes<HTMLAnchorElement>) =>
+    href && href[0] === "/" ? (
       <Link href={href}>{children}</Link>
     ) : (
       <a href={href} {...props}>
@@ -32,7 +42,6 @@ const MarkdownContent: FC<Props> = ({ file }: Props) => {
     return null
   }
 
-  // @ts-ignore
   return <ReactMarkdown components={components}>{content}</ReactMarkdown>
 }
 
