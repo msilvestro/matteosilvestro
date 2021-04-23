@@ -61,7 +61,12 @@ const App = () => {
             </ul>
           </nav>
         </div>
-        <section className="content">{route}</section>
+        <div className="content">
+          <section>{route}</section>
+          <footer>
+            ©2021 Matteo Silvestro — version <abbr title="iota">&iota;</abbr>
+          </footer>
+        </div>
       </div>
     </div>
   )
