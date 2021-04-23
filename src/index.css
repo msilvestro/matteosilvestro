@@ -26,6 +26,13 @@ a:hover {
   background-color: #262626;
 }
 
+abbr {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px dotted white;
+  cursor: help;
+}
+
 p {
   margin: 0;
   margin-bottom: 1em;
