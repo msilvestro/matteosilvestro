@@ -20,7 +20,7 @@
   color: #262626;
 }
 
-.selected {
+.selected > .face {
   cursor: default;
 }
 
