@@ -1,10 +1,24 @@
+import { AnchorHTMLAttributes } from "react"
 import type { AppProps } from "next/app"
+import Link from "next/link"
 import Image from "next/image"
+import { MDXProvider } from "@mdx-js/react"
 
 import CubeNav from "../components/CubeNav"
 import ActiveLink from "../components/ActiveLink"
 
 import "../styles.css"
+
+const components = {
+  a: ({ href, children, ...props }: AnchorHTMLAttributes<HTMLAnchorElement>) =>
+    href && href[0] === "/" ? (
+      <Link href={href}>{children}</Link>
+    ) : (
+      <a href={href} {...props}>
+        {children}
+      </a>
+    ),
+}
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -54,7 +68,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         </div>
         <div className="content">
           <section>
-            <Component {...pageProps} />
+            <MDXProvider components={components}>
+              <Component {...pageProps} />
+            </MDXProvider>
           </section>
           <footer>
             ©2021 Matteo Silvestro — version <abbr title="iota">&iota;</abbr>
