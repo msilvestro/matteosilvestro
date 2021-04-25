@@ -1,3 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box; /* account for any border and padding in the values
+                          you specify for an element's width and height */
+}
+
+html {
+  margin-left: calc(100vw - 100%); /* avoid scrollbar jumps */
+}
+
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  background-color: #262626;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+  border-bottom: 1px solid #262626;
+}
+
+a:hover {
+  color: white;
+  background-color: #262626;
+}
+
+abbr {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px dotted white;
+  cursor: help;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+p:last-child {
+  margin: 0;
+}
+
+blockquote {
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  border-left: 5px solid #262626;
+}
+
+blockquote > p {
+  white-space: pre-line;
+}
+
 .website {
   max-width: 768px;
   margin: 0 auto;
@@ -40,16 +95,11 @@ nav > ul {
 .profile-picture {
   margin-bottom: 20px;
   cursor: pointer;
-}
-
-.profile-picture > img {
-  height: 150px;
-  width: 150px;
   border: 4px solid white;
 }
 
-.profile-picture:hover > img,
-.selected > .profile-picture > img {
+.profile-picture:hover img,
+.selected > .profile-picture img {
   background-color: white;
 }
 
@@ -102,6 +152,10 @@ nav > ul {
 }
 
 @media (max-width: 768px) {
+  html {
+    margin-left: 0;
+  }
+
   .title {
     margin: 0 30px;
     text-align: center;
