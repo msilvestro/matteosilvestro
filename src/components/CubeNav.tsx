@@ -1,7 +1,8 @@
 import React, { FC, CSSProperties } from "react"
-import { ActiveLink } from "raviger"
+import Link from "next/link"
 
-import "./CubeNav.css"
+// @ts-ignore
+import styles from "./CubeNav.module.css"
 
 type Side = {
   name: string
@@ -16,11 +17,11 @@ type SideProps = {
 const CubeSide: FC<SideProps> = ({ side, style }: SideProps) => {
   return (
     <li>
-      <ActiveLink href={side.path} activeClass="selected">
-        <div className="face" style={style}>
+      <Link href={side.path}>
+        <div className={styles.face} style={style}>
           {side.name}
         </div>
-      </ActiveLink>
+      </Link>
     </li>
   )
 }
@@ -47,7 +48,7 @@ const CubeNav: FC<Props> = ({
 }: Props) => {
   return (
     <div
-      className="cube"
+      className={styles.cube}
       style={{
         fontSize,
         paddingBottom: (size * sin30) / 2,
@@ -63,7 +64,7 @@ const CubeNav: FC<Props> = ({
           transform: `rotate(-30deg) skewX(30deg) scaleY(${cos30})`,
         }}
       />
-      <div className="bottom-faces">
+      <div className={styles.bottomFaces}>
         <CubeSide
           side={faceNames.bottomLeft}
           style={{

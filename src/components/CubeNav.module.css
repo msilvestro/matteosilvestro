@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-.cube .face {
+.face {
   border: 5px solid white;
   color: white;
   display: flex;
@@ -14,16 +14,16 @@
   cursor: pointer;
 }
 
-.cube .face:hover,
-.cube .selected > div {
+.face:hover,
+.selected > div {
   background-color: white;
   color: #262626;
 }
 
-.cube .selected {
+.selected {
   cursor: default;
 }
 
-.bottom-faces {
+.bottomFaces {
   display: flex;
 }
