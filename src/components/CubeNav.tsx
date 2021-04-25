@@ -1,5 +1,6 @@
 import React, { FC, CSSProperties } from "react"
-import Link from "next/link"
+
+import ActiveLink from "./ActiveLink"
 
 // @ts-ignore
 import styles from "./CubeNav.module.css"
@@ -17,11 +18,11 @@ type SideProps = {
 const CubeSide: FC<SideProps> = ({ side, style }: SideProps) => {
   return (
     <li>
-      <Link href={side.path}>
+      <ActiveLink href={side.path} className={styles.selected}>
         <div className={styles.face} style={style}>
           {side.name}
         </div>
-      </Link>
+      </ActiveLink>
     </li>
   )
 }
