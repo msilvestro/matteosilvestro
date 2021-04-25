@@ -3036,11 +3036,6 @@ randomfill@^1.0.3:
     randombytes "^2.0.5"
     safe-buffer "^5.1.0"
 
-raviger@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/raviger/-/raviger-2.0.2.tgz#8dfaa994f2fb919f0fa402852f1d6f1992df8f1d"
-  integrity sha512-wBzbbo5LgrvD1lqODlNxmg+ZH4en2ncwL8P6bBCrnGzqHcid/vhLvLlFdRPv2hc7ULHG0Bk0wDYZ65FMfeuTUQ==
-
 raw-body@2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.4.1.tgz#30ac82f98bb5ae8c152e67149dac8d55153b168c"
@@ -3962,11 +3957,6 @@ web-namespaces@^1.0.0:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/web-namespaces/-/web-namespaces-1.1.4.tgz#bc98a3de60dadd7faefc403d1076d529f5e030ec"
   integrity sha512-wYxSGajtmoP4WxfejAPIr4l0fVh+jeMXZb08wNc0tMg6xsfZXj3cECqIK0G7ZAqUq0PP8WlMDtaOGVBTAWztNw==
-
-web-vitals@^1.0.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-1.1.1.tgz#2df535e3355fb7fbe34787b44b736e270e539377"
-  integrity sha512-jYOaqu01Ny1NvMwJ3dBJDUOJ2PGWknZWH4AUnvFOscvbdHMERIKT2TlgiAey5rVyfOePG7so2JcXXZdSnBvioQ==
 
 webidl-conversions@^4.0.2:
   version "4.0.2"
