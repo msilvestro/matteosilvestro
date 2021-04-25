@@ -59,7 +59,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                   <div className="profile-picture">
                     <Image
                       src="/persona_matt.png"
-                      alt="Home"
+                      alt="Profile picture"
                       width={142}
                       height={142}
                     />
