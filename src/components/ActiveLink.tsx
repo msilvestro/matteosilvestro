@@ -1,11 +1,16 @@
+import { ReactNode, MouseEvent } from "react"
 import { useRouter } from "next/router"
 
-// @ts-ignore
-const ActiveLink = ({ children, href, className = "selected" }) => {
+type Props = {
+  children: ReactNode
+  href: string
+  className?: string
+}
+
+const ActiveLink = ({ children, href, className = "selected" }: Props) => {
   const router = useRouter()
 
-  // @ts-ignore
-  const handleClick = (e) => {
+  const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
     router.push(href)
   }

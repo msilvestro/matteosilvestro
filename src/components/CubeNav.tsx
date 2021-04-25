@@ -2,7 +2,6 @@ import React, { FC, CSSProperties } from "react"
 
 import ActiveLink from "./ActiveLink"
 
-// @ts-ignore
 import styles from "./CubeNav.module.css"
 
 type Side = {
