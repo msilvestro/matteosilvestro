@@ -1,7 +1,9 @@
 import { AnchorHTMLAttributes } from "react"
 import type { AppProps } from "next/app"
+import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
+import { useRouter } from "next/router"
 import { MDXProvider } from "@mdx-js/react"
 
 import CubeNav from "../components/CubeNav"
@@ -20,9 +22,29 @@ const components = {
     ),
 }
 
+const getTitle = (route: string) => {
+  const baseTitle = "Matteo Silvestro"
+  const separator = "—"
+  switch (route) {
+    case "/fun":
+      return `${baseTitle} ${separator} Fun`
+    case "/work":
+      return `${baseTitle} ${separator} Work`
+    case "/education":
+      return `${baseTitle} ${separator} Education`
+    default:
+      return baseTitle
+  }
+}
+
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter()
+
   return (
     <div className="website">
+      <Head>
+        <title>{getTitle(router.route)}</title>
+      </Head>
       <div className="title">
         <header>
           <h1>Matteo Silvestro</h1>
