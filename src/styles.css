@@ -103,7 +103,7 @@ nav > ul {
   background-color: white;
 }
 
-.selected {
+.selected > .profile-picture {
   cursor: default;
 }
 
