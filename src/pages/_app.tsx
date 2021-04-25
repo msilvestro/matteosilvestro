@@ -1,8 +1,8 @@
 import type { AppProps } from "next/app"
-import Link from "next/link"
 import Image from "next/image"
 
 import CubeNav from "../components/CubeNav"
+import ActiveLink from "../components/ActiveLink"
 
 import "../styles.css"
 
@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <nav>
             <ul>
               <li>
-                <Link href="/">
+                <ActiveLink href="/">
                   <div className="profile-picture">
                     <Image
                       src="/persona_matt.png"
@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                       height={142}
                     />
                   </div>
-                </Link>
+                </ActiveLink>
               </li>
               <CubeNav
                 size={80}
