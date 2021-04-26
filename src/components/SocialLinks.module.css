@@ -14,12 +14,16 @@
   margin-bottom: 0.5em;
 }
 
-.socialLinks > li::before {
+.socialLinks > li a {
+  border: none;
+}
+
+.socialLinks > li a::before {
   content: "{";
   margin-right: 0.5em;
 }
 
-.socialLinks > li::after {
+.socialLinks > li a::after {
   content: "}";
   margin-left: 0.5em;
 }
