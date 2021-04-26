@@ -30,12 +30,21 @@ const ActiveLink = ({ socialLinks }: Props) => {
               }
               onMouseLeave={(e) => setDescription(defaultDescription)}
             >
-              {socialLink.name}
+              <span>{socialLink.name}</span>
             </a>
             <style jsx>{`
               a:hover {
                 background-color: ${socialLink.color};
                 border-color: ${socialLink.color};
+                border-bottom: 1px solid ${socialLink.color};
+              }
+
+              a > span {
+                border-bottom: 1px solid black;
+              }
+
+              a:hover > span {
+                border: none;
               }
             `}</style>
           </li>
