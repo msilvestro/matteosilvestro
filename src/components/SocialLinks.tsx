@@ -15,7 +15,7 @@ const ActiveLink = ({ socialLinks }: Props) => {
     <p>
       <ul className={styles.socialLinks}>
         {socialLinks.map((socialLink) => (
-          <li>
+          <li key={socialLink.name}>
             <a href={socialLink.href}>{socialLink.name}</a>
           </li>
         ))}
