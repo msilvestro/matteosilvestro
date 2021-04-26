@@ -54,6 +54,16 @@ blockquote > p {
   white-space: pre-line;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+ul:last-child {
+  margin: 0;
+}
+
 .website {
   max-width: 768px;
   margin: 0 auto;
@@ -145,6 +155,22 @@ nav > ul {
   font-size: 1.6em;
   margin: 0.14em 0.5em;
   margin-left: 0;
+}
+
+.content > section > ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
+/* Use stars as bullet points, as I usually do on paper -- that's because I am
+   bothered by little circles. */
+.content > section > ul li::before {
+  content: "★";
+  font-weight: bold;
+  display: inline-block; /* needed to add space between the bullet and the text */
+  width: 1em;
+  margin-left: -1.2em;
+  margin-right: 0.2em;
 }
 
 .content > footer {
