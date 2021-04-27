@@ -24,7 +24,7 @@ const components = {
 
 const getTitle = (route: string) => {
   const baseTitle = "Matteo Silvestro"
-  const separator = "—"
+  const separator = "~"
   switch (route) {
     case "/fun":
       return `${baseTitle} ${separator} Fun`
