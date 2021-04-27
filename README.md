@@ -1,7 +1,7 @@
 # Matteo Silvestro's webpage
 
 This is the source code that powers my personal webpage. It is written using
-[Next.js][https://nextjs.org].
+[Next.js](https://nextjs.org).
 
 ## Run website
 
