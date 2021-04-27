@@ -16,9 +16,10 @@ This is the source code that powers my personal webpage. It is written using
 - The website will be available at
   [http://localhost:3000](http://localhost:3000).
 
-## Release new version and deploy
+## Release new version
 
-- Bump version and tag release:
+- Bump version and tag release (select the desired version):
   ```sh
   yarn version
   ```
+- When pushing to `main` Vercel will automatically deploy.
