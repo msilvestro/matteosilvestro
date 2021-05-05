@@ -29,8 +29,7 @@ a:hover {
 
 abbr {
   text-decoration: none;
-  color: white;
-  border-bottom: 1px dotted white;
+  border-bottom: 1px dotted;
   cursor: help;
 }
 
