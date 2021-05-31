@@ -1,4 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
-Sitemap: http://www.matteosilvestro.com/sitemap.xml
+
+Sitemap: https://www.matteosilvestro.com/sitemap.xml
