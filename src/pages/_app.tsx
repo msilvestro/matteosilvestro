@@ -95,7 +95,8 @@ function MyApp({ Component, pageProps }: AppProps) {
             </MDXProvider>
           </section>
           <footer>
-            ©2021 Matteo Silvestro — version <abbr title="iota">&iota;</abbr>
+            ©{new Date().getFullYear()} Matteo Silvestro — version{" "}
+            <abbr title="iota">&iota;</abbr>
           </footer>
         </div>
       </div>
