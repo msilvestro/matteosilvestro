@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box; /* account for any border and padding in the values
+                          you specify for an element's width and height */
+}
+
+html {
+  margin-left: calc(100vw - 100%); /* avoid scrollbar jumps */
+}
+
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  background-color: #262626;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+  border-bottom: 1px solid #262626;
+}
+
+a:hover {
+  color: white;
+  background-color: #262626;
+  border-top: 1px solid #262626;
+}
+
+abbr {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+p:last-child {
+  margin: 0;
+}
+
+blockquote {
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  border-left: 5px solid #262626;
+}
+
+blockquote > p {
+  white-space: pre-line;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  margin-top: -0.7em;
+  margin-bottom: 1em;
+}
+
+ul:last-child {
+  margin-bottom: 0;
+}
+
+.website {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-left: 210px;
+}
+
+.title > header {
+  margin: 30px 0;
+}
+
+.title > header > h1 {
+  margin: -0.24em 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.sidebar {
+  margin-left: 30px;
+}
+
+nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-picture {
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 4px solid white;
+  background-color: white;
+  width: 150px;
+  height: 150px;
+}
+
+.profile-picture img {
+  background-color: #262626;
+}
+
+.profile-picture:hover img,
+.selected > .profile-picture img {
+  background-color: white;
+}
+
+.selected > .profile-picture {
+  cursor: default;
+}
+
+.content {
+  flex: 1;
+  margin: 0 30px;
+}
+
+.content > section {
+  background-color: white;
+  color: #262626;
+  padding: 30px;
+  padding-top: 0;
+}
+
+.content > section > h2 {
+  display: inline-block;
+  background-color: #262626;
+  color: white;
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0.2em 0.5em;
+}
+
+.content > section > h3 {
+  display: inline-block;
+  background-color: #262626;
+  color: white;
+  margin: 0;
+  margin-top: 0.4em;
+  margin-bottom: 0.85em;
+  padding: 0.15em 0.3em;
+}
+
+.content > section > h4 {
+  float: left;
+  font-weight: normal;
+  font-size: 1.6em;
+  margin: 0.14em 0.5em;
+  margin-left: 0;
+}
+
+.content > section > ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
+/* Use stars as bullet points, as I usually do on paper -- that's because I am
+   bothered by little circles. */
+.content > section > ul li::before {
+  content: "★";
+  font-weight: bold;
+  display: inline-block; /* needed to add space between the bullet and the text */
+  width: 1em;
+  margin-left: -1.2em;
+  margin-right: 0.2em;
+}
+
+.content > footer {
+  color: #696969;
+  padding: 1em;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  html {
+    margin-left: 0;
+  }
+
+  .title {
+    margin: 0 30px;
+    text-align: center;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .sidebar > nav > ul {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-right: 30px;
+  }
+
+  .profile-picture {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .content {
+    margin: 0;
+  }
+}

@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#262626" />
+    <meta
+      name="description"
+      content="I'm Matteo Silvestro, mathematician by education, coder by passion. Here you can know more about me."
+    />
+    <link rel="stylesheet" href="%sveltekit.assets%/ginseng.css" />
+    <!-- follows https://css-tricks.com/how-to-favicon-in-2021/ best practices -->
+    <link rel="icon" href="%sveltekit.assets%/favicon.ico" />
+    <link rel="icon" href="%sveltekit.assets%/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="%sveltekit.assets%/apple-touch-icon.png" />
+    <link rel="manifest" href="%sveltekit.assets%/manifest.webmanifest" />
+    <meta name="viewport" content="width=device-width" />
+    %sveltekit.head%
+  </head>
+
+  <body data-sveltekit-preload-data="hover">
+    <div class="website">
+      <div class="title">
+        <header>
+          <h1>Matteo Silvestro</h1>
+        </header>
+      </div>
+      <div class="main">
+        <div class="sidebar">
+          <nav>
+            <ul>
+              <li><a href="/">index</a></li>
+              <li><a href="/fun">fun</a></li>
+              <li><a href="/work">work</a></li>
+              <li><a href="/education">education</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="content">%sveltekit.body%</div>
+      </div>
+    </div>
+  </body>
 </html>
