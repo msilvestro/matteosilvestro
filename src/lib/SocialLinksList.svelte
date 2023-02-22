@@ -1,7 +1,18 @@
 <script>
   import SocialLink from '$lib/SocialLink.svelte';
 
+  /**
+   * @typedef SocialLink
+   * @type {object}
+   * @property {string} name - the display name.
+   * @property {string} color - the color to show on hover.
+   * @property {string} href - the link to the relevant page.
+   * @property {string} description - a short description.
+   */
+
+  /** @type SocialLink[] */
   export let socialLinks;
+
   const defaultDescription = 'Hover on the links above to know more.';
   let description = defaultDescription;
 
