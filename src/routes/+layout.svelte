@@ -1,14 +1,9 @@
 <script>
-  import CubeNav from './lib/CubeNav.svelte';
+  import CubeNav from '$lib/CubeNav.svelte';
   import { page } from '$app/stores';
 
-  export let title;
   const currentYear = new Date().getFullYear();
 </script>
-
-<svelte:head>
-  <title>Matteo Silvestro{title ? ` | ${title}` : ''}</title>
-</svelte:head>
 
 <div class="sidebar">
   <nav>
@@ -16,7 +11,7 @@
       <li>
         <a href="/" class:selected={$page.route.id === '/'}
           ><div class="profile-picture">
-            <img src="/persona_matt.png" alt="My avatar" width="142" height="142" />
+            <img src="/persona_matt.png" alt="A stylized portrait of me" width="142" height="142" />
           </div></a
         >
       </li>

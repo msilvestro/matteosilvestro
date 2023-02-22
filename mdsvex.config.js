@@ -10,7 +10,7 @@ const config = defineConfig({
   "remarkPlugins": [],
   "rehypePlugins": [],
 
-  "layout": "./src/layout.svelte"
+  "layout": "./src/routes/md-layout.svelte"
 });
 
 export default config;
