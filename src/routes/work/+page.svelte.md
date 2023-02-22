@@ -17,12 +17,10 @@ and more efficient using code.
 
 You can find all of my works on [GitHub][gh]. Here is a selection of them:
 
-- [this website][website], now written in Next.js;
+- [this website][website], now written in Svelte;
 - [My spot][my-spot], a React app I've written for me and my family to help
   manage screen sharing on Netflix;
 - [HowLongToBeat Oracle][hltb], a library to browse HowLongToBeat entries;
-- [Qlik Butler][qlik], a simple Powershell tool to manage Qlik and NPrinting
-  clusters.
 
 [gh]: https://github.com/msilvestro
 [website]: https://github.com/msilvestro/matteosilvestro
