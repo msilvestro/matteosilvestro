@@ -20,7 +20,7 @@
           </div></a
         >
       </li>
-      <CubeNav size="80" fontSize="1.2em" />
+      <CubeNav size={80} margin={10} fontSize="1.2em" />
     </ul>
   </nav>
 </div>
