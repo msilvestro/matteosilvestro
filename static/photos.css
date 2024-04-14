@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box; /* account for any border and padding in the values
+                          you specify for an element's width and height */
+}
+
+html {
+  margin-left: calc(100vw - 100%); /* avoid scrollbar jumps */
+}
+
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  background-color: #262626;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+  border-bottom: 1px solid #262626;
+}
+
+a:hover {
+  color: white;
+  background-color: #262626;
+  border-top: 1px solid #262626;
+  cursor: pointer;
+}
+
+.website {
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.title > header {
+  margin: 30px 0;
+}
+
+.title > header > h1 {
+  margin: -0.24em 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.settings {
+  flex: 1;
+  background-color: white;
+  align-self: center;
+  padding: 0.5em 0.5em;
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.section h2 {
+  margin: auto 30px;
+  background-color: white;
+  align-self: center;
+  padding: 0.2em 0.5em;
+}
+
+.gallery {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery .photo {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.one .photo {
+    width: 168px;
+}
+
+.one img {
+  width: 128px;
+  height: 112px;
+}
+
+.two img {
+  width: 256px;
+  height: 224px;
+}
+
+.four img {
+  width: 512px;
+  height: 448px;
+}
+
+.gallery img {
+  image-rendering: pixelated;
+  border: 1px solid white;
+}
+
+.photo-title {
+    margin-top: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 0.2em 0.5em;
+}
+
+.download-links {
+    text-align: center;
+    background-color: white;
+    padding: 0.2em 0.5em;
+}

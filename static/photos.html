@@ -1,5 +1,220 @@
-<html>
-    <body>
-        <h1>Photos</h1>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#262626" />
+    <meta
+      name="description"
+      content="I'm Matteo Silvestro, mathematician by education, coder by passion. Here you can know more about me."
+    />
+    <link rel="stylesheet" href="photos.css" />
+    <!-- follows https://css-tricks.com/how-to-favicon-in-2021/ best practices -->
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="viewport" content="width=device-width" />
+
+    <script>
+      function resize(times) {
+        document.querySelectorAll('.gallery').forEach((element) => {
+          element.className = `gallery ${times}`;
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div class="website">
+      <div class="title">
+        <header>
+          <h1>Matteo Silvestro's Photos</h1>
+        </header>
+      </div>
+      <div class="main">
+        <div class="settings">
+          Change image size: <a onclick="resize('one')">1x</a> / <a onclick="resize('two')">2x</a> /
+          <a onclick="resize('four')">4x</a>
+        </div>
+        <div class="section">
+          <h2>Torino Comics 2024</h2>
+          <div class="gallery two">
+            <div class="photo">
+              <img src="gbcamera/001.bmp" />
+              <span class="photo-title">Nezuko</span>
+              <span class="download-links"
+                ><a href="gbcamera/001.bmp">bmp</a> / <a href="gbcamera/001_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/002.bmp" />
+              <span class="photo-title">Bocchi</span>
+              <span class="download-links"
+                ><a href="gbcamera/002.bmp">bmp</a> / <a href="gbcamera/002_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/003.bmp" />
+              <span class="photo-title">Caitlyn & Vi</span>
+              <span class="download-links"
+                ><a href="gbcamera/003.bmp">bmp</a> / <a href="gbcamera/003_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/004.bmp" />
+              <span class="photo-title">Jinx</span>
+              <span class="download-links"
+                ><a href="gbcamera/004.bmp">bmp</a> / <a href="gbcamera/004_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/005.bmp" />
+              <span class="photo-title">Shinobu</span>
+              <span class="download-links"
+                ><a href="gbcamera/005.bmp">bmp</a> / <a href="gbcamera/005_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/006.bmp" />
+              <span class="photo-title">Yor</span>
+              <span class="download-links"
+                ><a href="gbcamera/006.bmp">bmp</a> / <a href="gbcamera/006_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/007.bmp" />
+              <span class="photo-title">Shrek</span>
+              <span class="download-links"
+                ><a href="gbcamera/007.bmp">bmp</a> / <a href="gbcamera/007_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/008.bmp" />
+              <span class="photo-title">-</span>
+              <span class="download-links"
+                ><a href="gbcamera/008.bmp">bmp</a> / <a href="gbcamera/008_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/009.bmp" />
+              <span class="photo-title">Cruella & Dalmatian</span>
+              <span class="download-links"
+                ><a href="gbcamera/009.bmp">bmp</a> / <a href="gbcamera/009_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/010.bmp" />
+              <span class="photo-title">NCR guy</span>
+              <span class="download-links"
+                ><a href="gbcamera/010.bmp">bmp</a> / <a href="gbcamera/010_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/011.bmp" />
+              <span class="photo-title">Pokémon trainers</span>
+              <span class="download-links"
+                ><a href="gbcamera/011.bmp">bmp</a> / <a href="gbcamera/011_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/012.bmp" />
+              <span class="photo-title">Miku</span>
+              <span class="download-links"
+                ><a href="gbcamera/012.bmp">bmp</a> / <a href="gbcamera/012_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/013.bmp" />
+              <span class="photo-title">Kirito ♀</span>
+              <span class="download-links"
+                ><a href="gbcamera/013.bmp">bmp</a> / <a href="gbcamera/013_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/014.bmp" />
+              <span class="photo-title">Mew Pudding</span>
+              <span class="download-links"
+                ><a href="gbcamera/014.bmp">bmp</a> / <a href="gbcamera/014_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/015.bmp" />
+              <span class="photo-title">Frieren 1</span>
+              <span class="download-links"
+                ><a href="gbcamera/015.bmp">bmp</a> / <a href="gbcamera/015_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/016.bmp" />
+              <span class="photo-title">Frieren 2</span>
+              <span class="download-links"
+                ><a href="gbcamera/016.bmp">bmp</a> / <a href="gbcamera/016_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/017.bmp" />
+              <span class="photo-title">Chiaki Nanami</span>
+              <span class="download-links"
+                ><a href="gbcamera/017.bmp">bmp</a> / <a href="gbcamera/017_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/018.bmp" />
+              <span class="photo-title">Nanamin</span>
+              <span class="download-links"
+                ><a href="gbcamera/018.bmp">bmp</a> / <a href="gbcamera/018_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/019.bmp" />
+              <span class="photo-title">Ai Hoshino</span>
+              <span class="download-links"
+                ><a href="gbcamera/019.bmp">bmp</a> / <a href="gbcamera/019_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/020.bmp" />
+              <span class="photo-title">Mikasa</span>
+              <span class="download-links"
+                ><a href="gbcamera/020.bmp">bmp</a> / <a href="gbcamera/020_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/021.bmp" />
+              <span class="photo-title">-</span>
+              <span class="download-links"
+                ><a href="gbcamera/021.bmp">bmp</a> / <a href="gbcamera/021_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/022.bmp" />
+              <span class="photo-title">Chihiro Fujisaki</span>
+              <span class="download-links"
+                ><a href="gbcamera/022.bmp">bmp</a> / <a href="gbcamera/022_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/023.bmp" />
+              <span class="photo-title">Bakugo ♀</span>
+              <span class="download-links"
+                ><a href="gbcamera/023.bmp">bmp</a> / <a href="gbcamera/023_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/024.bmp" />
+              <span class="photo-title">Kratos</span>
+              <span class="download-links"
+                ><a href="gbcamera/024.bmp">bmp</a> / <a href="gbcamera/024_8x.png">png</a></span
+              >
+            </div>
+            <div class="photo">
+              <img src="gbcamera/025.bmp" />
+              <span class="photo-title">2B</span>
+              <span class="download-links"
+                ><a href="gbcamera/025.bmp">bmp</a> / <a href="gbcamera/025_8x.png">png</a></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
