@@ -27,8 +27,8 @@
 
 <div>
   <ul>
-    {#each socialLinks as socialLink}
-      <li key={socialLink.name}>
+    {#each socialLinks as socialLink (socialLink.name)}
+      <li>
         <SocialLink
           name={socialLink.name}
           color={socialLink.color}

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
   box-sizing: border-box; /* account for any border and padding in the values
@@ -11,7 +11,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   background-color: #262626;
 }
 
@@ -172,7 +172,7 @@ nav > ul {
 /* Use stars as bullet points, as I usually do on paper -- that's because I am
    bothered by little circles. */
 .content > section > ul li::before {
-  content: "★";
+  content: '★';
   font-weight: bold;
   display: inline-block; /* needed to add space between the bullet and the text */
   width: 1em;
