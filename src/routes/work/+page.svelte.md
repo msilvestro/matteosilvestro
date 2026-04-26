@@ -52,7 +52,14 @@ To me videogames are the highest form of art, with their unique blend of
 interactivity, animations and music.
 
 You can find my games on [itch.io][itch]. I participated in a few game jams,
-which are great opportunities to improve your game development skills and find
-new teammates.
+which are great opportunities to improve game development skills and find new
+teammates.
+
+I also released a four-leaf clover hidden-object game called
+[One in a Thousand: Clover Book][one_in_a_thousand] made entirely by myself.
+
+Check out my [videogames-focused resume](/matteo_silvestro_resume_vg.pdf) for
+more details.
 
 [itch]: https://msilvestro.itch.io
+[one_in_a_thousand]: https://store.steampowered.com/app/4504950/One_in_a_Thousand_Clover_Book/
